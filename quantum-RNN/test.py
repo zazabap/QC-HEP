@@ -64,10 +64,10 @@ def data():
   print("Original Dataframe:")
   print(df)
 
-  X = df[['lep1_pt', 'jet_1_pt', 'miss_ene']] 
+  X = df[['jet_1_pt', 'jet_2_pt', 'jet_3_pt']] 
   y = df[['isSignal']]
 
-  X_test = df_test[['lep1_pt', 'jet_1_pt', 'miss_ene']] 
+  X_test = df_test[['jet_1_pt', 'jet_2_pt', 'jet_3_pt']] 
   y_test = df_test[['isSignal']]
   X_test = X_test.to_numpy()
   y_test = y_test.to_numpy()
