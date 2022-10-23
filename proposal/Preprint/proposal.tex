@@ -636,7 +636,7 @@ research.
   here focuses more on quantum circuits and quantum fourier transform study. }
 \end{figure}
 
-\subsection*{Quantum Gates and quantum computation}
+\subsection*{Quantum Gates, Quantum Circuit, and Quantum Computation}
 Clasical computer consists of wires and logic gates. Similarly, 
 the quantum computer takes quantum version and logic gates and act on 
 each qubit. The most famous Pauli Matrices, X are used as NOT gates: 
@@ -656,14 +656,49 @@ Z gate flips the sign of $\ket{1}$ to give $-\ket{1}$ and
 \begin{equation}
   H =  \frac{1}{\sqrt{2}}\begin{bmatrix}
     1 & 1 \\ 1 & -1
+  \end{bmatrix}, S = \begin{bmatrix}
+    1 & 0 \\ 0 & i
+  \end{bmatrix}, T = \begin{bmatrix}
+    1 & 0 \\ 0 & exp(i \pi/4)
   \end{bmatrix}
 \end{equation}
 Hadamard gate turns $\ket{0}$ into $(\ket{0}+\ket{1})/\sqrt{2}$, and 
-$\ket{1}$ into $(\ket{0}-\ket{1})/\sqrt{2}$
+$\ket{1}$ into $(\ket{0}-\ket{1})/\sqrt{2}$, phase gate S and $\pi/8$ gate T 
+have some algebraic relation with H that $H = (X+Z)/\sqrt{2}$ and 
+$S = T^2$. For rotation matrix around X, Y, Z, rotates around x, y, z axes, 
+they are defined by equation:
+$$R_{\eta}(\theta) = e^{-i \theta \eta /2} = \cos \frac{\theta}{2}I -i \sin \frac{\theta}{2} \eta, \ \ \ \eta \in \{X,Y,Z\}$$
+Some important theorem likes Z-Y decomposition for a single qubit 
+exits. Suppose U is a unitary operation on a single qubit. Then there exist
+real numbers $\alpha, \beta, \gamma, \delta$ such that 
+\begin{equation}
+  U = e^{i \alpha} R_z(\beta) R_y (\gamma) R_z(\delta)
+\end{equation}
 
 \subsubsection*{Controlled Operations}
-Here are some controlled openeration with CNOT gate. 
-
+Here are some controlled openeration with CNOT gate. The core 
+idea for controlled operation is "If A is true, then do B". On 
+single qubit, in terms of the computational basis, the action
+of the CNOT is given by $\ket{c} \ket{t} \rightarrow \ket{c} \ket{t \bigoplus c }$,
+which means that the control qubit is set to $\ket{1}$ then the target
+qubit is flipped, otherwise the target qubit is left alone. Thus, 
+in the computational basis $\ket{control, target}$ the matrix representation
+of CNOT is: 
+\begin{equation}
+  \begin{bmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 0 & 1 \\
+    0 & 0 & 1 & 0 
+  \end{bmatrix}
+\end{equation}
+which could also replace by \textit{controlled-U} operation. 
+\begin{figure}[h]
+  \includegraphics[width=0.20\textwidth]{cnot.png}
+  \includegraphics[width=0.24\textwidth]{cnot-u.png}
+  \includegraphics[width=0.48\textwidth]{cnot-h.png}
+  \caption{Some circuit representation of control operation}
+\end{figure}
 \subsection*{Encoding Classical Data into Quantum States}
 Quantum Encoding is a process to transform classical information into quantum 
 states. In order to use quantum algorithms to solve classical problems, 
@@ -715,6 +750,42 @@ for degree $\pi$, the corresponding quantum state is then $\ket{x} = Ry(\pi) \ke
 
 
 \subsection*{Quantum Classifier}
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.58\textwidth]{vqc.png} 
+    \includegraphics[width=0.38\textwidth]{vqc1.png} 
+  \end{center}
+  \caption{The generic variational quantum circuit 
+  architecture and procedure for optimization. The 
+  inputs go through encoding, the unitary matrices, 
+  measurement, lost function evalution and then 
+  update parameters.}
+\end{figure}
+
+\subsection*{Quantum Fourier Transform Phase Estimation}
+Suppose a unitary operator U has an eigenvalue $\ket{u}$ with 
+eigenvalue $e^{2 \pi i \varphi}$, where the value of 
+$\varphi$ is unknown. The goal of the 
+phase estimation algorithm is to estimate $\varphi$.
+\newline
+\textbf{Inputs:} (1) A black box which performs a 
+controlled-$U^j$ operation, for integer j. (2) an 
+eigenstate $\ket{u}$ of U with eigenvalue $e^{2 \pi i \varphi}$, and 
+(3) $t = n + [log(2+\frac{1}{2 \epsilon})]$ qubits initialized 
+to $\ket{0}$ \newline
+\textbf{Outputs:} An n-bit approximation $\tilde{\varphi_u}$ to $\varphi_u$ \newline
+\textbf{Runtime:} $O(t^2)$ operations and one call to controlled-$U^j$
+black box. Succeeds with probability at least $1-\epsilon$. \newline
+\textbf{Procedure}: 
+\begin{enumerate}
+  \item $\ket{0}\ket{u}$  initial state
+  \item $\rightarrow \frac{1}{\sqrt{2^t}} \sum^{2^t -1}_{j=0} \ket{j}\ket{u} $ create superposition
+  \item $\rightarrow \frac{1}{\sqrt{2^t}} \sum^{2^t -1}_{j=0} \ket{j} U^j \ket{u} $ apply black box
+  \item $= \frac{1}{\sqrt{2^t}} \sum^{2^t -1}_{j=0}  e^{2 \pi i j \varphi_u} \ket{j} \ket{u} $ result of black box 
+  \item $\rightarrow \ket{\tilde{\varphi_u}} \ket{u}$
+  \item  $\rightarrow \tilde{\varphi_u}$
+\end{enumerate}
 
 \textbf{References}
 \begin{enumerate}

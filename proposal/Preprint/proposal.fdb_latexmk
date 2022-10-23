@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1666425427 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1666425431
-  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1666425426 33863 c276da034f65c500c4c36f42b8fecc09 ""
+["pdflatex"] 1666495334 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1666495337
+  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1666495333 37193 e943a834ac3b32dbe14ea5bc2e401189 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1647894602 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1647894602 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/map/fontname/texfonts.map" 1647894602 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -119,13 +119,18 @@
   "/usr/local/Cellar/texlive/20220321/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1647894602 2826546 f0dd592ad578e82a763fb1ca4636cedb ""
   "arxiv.sty" 1665377570 7490 a96b0cef0e35ec8e90b092792e37a0b7 ""
   "category.png" 1666353000 571743 d3f9723e59039a31df7dff3ca0f3110f ""
+  "cnot-h.png" 1666447413 19493 aaba8786806cc89aa062ed5aca5458c9 ""
+  "cnot-u.png" 1666447403 4932 e610a23ba69dd8d1cb4fb167c5c6fecd ""
+  "cnot.png" 1666447393 4172 1d8661a5dac8f09ff52ca53942c4461b ""
   "kernel1.png" 1665493562 221262 721876cbeb82ec619df2d38af0ed21b5 ""
   "kernel2.png" 1665538478 147864 6f76614aad66dfbbdb24e2e8f023251a ""
-  "proposal.aux" 1666425430 2749 6f05ecbec767b650168a263afee85a36 "pdflatex"
-  "proposal.out" 1666425430 2470 6a11d14822182873ac33328a254dac27 "pdflatex"
-  "proposal.tex" 1666425426 33863 c276da034f65c500c4c36f42b8fecc09 ""
+  "proposal.aux" 1666495337 3224 a8e12dea75e385d1b083bcc3021ed5ad "pdflatex"
+  "proposal.out" 1666495337 2470 6a11d14822182873ac33328a254dac27 "pdflatex"
+  "proposal.tex" 1666495333 37193 e943a834ac3b32dbe14ea5bc2e401189 ""
   "qft1.png" 1665461717 109305 55927126b5727d3e38bef44fdf7a1937 ""
   "qft2.png" 1665461717 53160 d9e5f0a9454ec4a9352c1f7375cba1cb ""
+  "vqc.png" 1666490320 34739 6fb1d1330cda17a45c56fd97e8c981cc ""
+  "vqc1.png" 1666490566 126694 0dcc76bdedbbccc2e59db1084b207892 ""
   (generated)
   "proposal.aux"
   "proposal.log"
