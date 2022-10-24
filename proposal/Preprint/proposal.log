@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2022.5.27)  23 OCT 2022 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2022.5.27)  24 OCT 2022 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,14 +485,11 @@ File: kernel2.png Graphic file (type png)
 <use kernel2.png>
 Package pdftex.def Info: kernel2.png  used on input line 125.
 (pdftex.def)             Requested size: 399.2946pt x 93.63995pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [2 <./kernel2.png>]
 <kernel1.png, id=58, 872.25874pt x 395.4775pt>
 File: kernel1.png Graphic file (type png)
 <use kernel1.png>
-Package pdftex.def Info: kernel1.png  used on input line 276.
+Package pdftex.def Info: kernel1.png  used on input line 289.
 (pdftex.def)             Requested size: 399.2946pt x 181.03477pt.
 
 
@@ -502,63 +499,63 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <qft2.png, id=83, 825.0825pt x 272.01625pt>
 File: qft2.png Graphic file (type png)
 <use qft2.png>
-Package pdftex.def Info: qft2.png  used on input line 422.
+Package pdftex.def Info: qft2.png  used on input line 426.
 (pdftex.def)             Requested size: 225.48038pt x 74.3336pt.
 <qft1.png, id=84, 1084.05pt x 369.38pt>
 File: qft1.png Graphic file (type png)
 <use qft1.png>
-Package pdftex.def Info: qft1.png  used on input line 423.
+Package pdftex.def Info: qft1.png  used on input line 427.
 (pdftex.def)             Requested size: 225.48038pt x 76.8281pt.
  [5 <./qft2.png> <./qft1.png>] [6] [7]
-<category.png, id=145, 1509.64pt x 1098.1025pt>
+<category.png, id=148, 1509.64pt x 1098.1025pt>
 File: category.png Graphic file (type png)
 <use category.png>
-Package pdftex.def Info: category.png  used on input line 633.
+Package pdftex.def Info: category.png  used on input line 681.
 (pdftex.def)             Requested size: 469.75499pt x 341.69844pt.
  [8 <./category.png>]
-<cnot.png, id=157, 196.735pt x 133.49875pt>
+<cnot.png, id=160, 196.735pt x 133.49875pt>
 File: cnot.png Graphic file (type png)
 <use cnot.png>
-Package pdftex.def Info: cnot.png  used on input line 697.
+Package pdftex.def Info: cnot.png  used on input line 745.
 (pdftex.def)             Requested size: 93.94955pt x 63.75069pt.
-<cnot-u.png, id=158, 285.065pt x 172.645pt>
+<cnot-u.png, id=161, 285.065pt x 172.645pt>
 File: cnot-u.png Graphic file (type png)
 <use cnot-u.png>
-Package pdftex.def Info: cnot-u.png  used on input line 698.
+Package pdftex.def Info: cnot-u.png  used on input line 746.
 (pdftex.def)             Requested size: 112.74377pt x 68.27963pt.
-<cnot-h.png, id=159, 796.9775pt x 272.01625pt>
+<cnot-h.png, id=162, 796.9775pt x 272.01625pt>
 File: cnot-h.png Graphic file (type png)
 <use cnot-h.png>
-Package pdftex.def Info: cnot-h.png  used on input line 699.
+Package pdftex.def Info: cnot-h.png  used on input line 747.
 (pdftex.def)             Requested size: 225.48038pt x 76.95679pt.
  [9 <./cnot.png> <./cnot-u.png> <./cnot-h.png>]
-<vqc.png, id=176, 629.35126pt x 265.99374pt>
+<vqc.png, id=179, 629.35126pt x 265.99374pt>
 File: vqc.png Graphic file (type png)
 <use vqc.png>
-Package pdftex.def Info: vqc.png  used on input line 756.
+Package pdftex.def Info: vqc.png  used on input line 804.
 (pdftex.def)             Requested size: 272.45874pt x 115.15434pt.
-<vqc1.png, id=177, 1000.73875pt x 630.355pt>
+<vqc1.png, id=180, 1000.73875pt x 630.355pt>
 File: vqc1.png Graphic file (type png)
 <use vqc1.png>
-Package pdftex.def Info: vqc1.png  used on input line 757.
+Package pdftex.def Info: vqc1.png  used on input line 805.
 (pdftex.def)             Requested size: 178.50919pt x 112.43944pt.
  [10 <./vqc.png> <./vqc1.png>] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 6A11D14822182873AC33328A254DAC27;2470.
  ) 
 Here is how much of TeX's memory you used:
- 13518 strings out of 478268
- 218470 string characters out of 5837861
- 642818 words of memory out of 5000000
+ 13536 strings out of 478268
+ 218642 string characters out of 5837861
+ 642078 words of memory out of 5000000
  31248 multiletter control sequences out of 15000+600000
- 513234 words of font info for 170 fonts, out of 8000000 for 9000
+ 513878 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,77p,1071b,407s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (10 pages, 969759 bytes).
+ 70i,12n,77p,1071b,429s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (10 pages, 981501 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
  41075 words of extra memory for PDF output out of 42996 (max. 10000000)
 

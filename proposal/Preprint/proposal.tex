@@ -181,7 +181,20 @@ quantum kernel method, either deriving the completely new algorithm or
 improving the existing clustering algorithms would be interesting. 
 
 
-\textbf{Quantum Signal Processing:} The Shor's algorithm is a 
+\textbf{Quantum Signal Processing:} 
+1. \textbf{QFT ready Original Signal State } One important question is: 
+Can we use the quantum Fourier transform to speed up the 
+computation of the Fast Fourier Transform or Discrete Fourier Transform? 
+In Issac Chuang's book, he considered the amplitude in a quantum 
+computer cannot be directly accessed by measurement. Thus there is 
+no way of determining the Fourier transformed amplitudes of the original 
+state. Moreover, Chuang thinks there is no way of determining the Fourier transformed 
+amplitudes of the original states. However, in image processing field, 
+different Quantum Image Representation were proposed and some quantum analog 
+representation of classical images is demonstrated. Such progress in recent 
+year motivates me to rethink about the possible application of QFT in 
+signal processing.   \newline
+2. \textbf{Efficiency Improvement} The Shor's algorithm is a 
 quantum computer algorithm for finding the prime factors of an integer. 
 Shor's algorithm runs polynomial time and allows us to find prime decomposition of very big 
 numbers in $O ((log N)^3)$. One of the important factors such algorithm is so efficient is 
@@ -407,16 +420,7 @@ Or the unitary matrix:
 \begin{equation}
   U_{QFT}= \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \sum^{N-1}_{k=0}  \omega_N^{jk} \ket{k} \bra{j}
 \end{equation}
-There are already well published paper for quantum Fourier transform. Moreover, 
-the quantum-analog representation of classical images, the pixel value 
-of $i^{th}$ row and the $j^{th}$ column can be stored as:
-$\ket{pixel_{i,j}} = \cos(\frac{\theta_{i,j}}{2}) \ket{0} + 
-\sin (\frac{\theta_{i,j}}{2}) \ket{1}$ as formed in \textbf{Qubit Lattice} model.
-Other image representations like \textbf{Flexible Representation of 
-Quantum Images} (FRQI) and \textbf{Novel Enhanced Quantum Representation} (NEQR) also 
-provide new type of representation for images that could be proceed 
-by quantum Fourier transform. If properly organized, edge detection, filtering 
-and more could be realized in thoroughly different method from today.
+There are already well published paper for quantum Fourier transform.
 
 \begin{figure}[h]
   \includegraphics[width=0.48\textwidth]{qft2.png}
@@ -425,6 +429,32 @@ and more could be realized in thoroughly different method from today.
   n different qubits}
 \end{figure}
 
+\textbf{Image Processing:} The quantum-analog representation of classical images, the pixel value 
+of $i^{th}$ row and the $j^{th}$ column can be stored as:
+$\ket{pixel_{i,j}} = \cos(\frac{\theta_{i,j}}{2}) \ket{0} + 
+\sin (\frac{\theta_{i,j}}{2}) \ket{1}$ as formed in \textbf{Qubit Lattice} model.
+Other image representations like \textbf{Flexible Representation of 
+Quantum Images} (FRQI) exists: 
+\begin{equation}
+  \ket{I(\theta)} = \frac{1}{2^n} \sum_{i=0}^{2n-1} (sin(\theta_i) \ket{0} + cos(\theta_i)\ket{1}) \ket{i}
+\end{equation}
+it actually maps each pixel's grayscale value to the amplitude as well as 
+captures the corresponding positions in an image and integrate them into 
+a quantum state. Where $\theta$ encodes pixel value of the corresponding 
+position $\ket{i}$. The FRQI representation maintains a normalized state 
+and the representation space decreases exponentially compared to the 
+classical image due to the quantum states' superposition effect. 
+Moreover, image representation like \textbf{Novel Enhanced Quantum Representation} (NEQR) exists:
+\begin{equation}
+  \ket{I} = \frac{1}{2^n} \sum^{2^{2n} -1 }_{y=0} \sum^{2^{2n} -1 }_{x=0} \ket{f(y,x)} \ket{y x}
+\end{equation}
+Such method uses the basis state of a qubit sequence to 
+store the grayscale value of every pixel instead of 
+probability amplitude encoded in a qubit in FRQI. 
+These representations for images provide possible application on 
+quantum Fourier transform. There are already some study using quantum kernel 
+method to work on classification. If properly organized, edge detection, filtering 
+and more could be realized in thoroughly different method from today.
 
 \subsection{Tentative Plan/Timetable}
 The first two years are filled with more details 
@@ -589,6 +619,24 @@ all types of study in natural science and broader human society.
 
 
 \section{Present Field of Study}
+
+The pixel hit information plays vital rule for the charge particle track reconstructions,
+especially for flavor tagging such as c-, b-quark jets or hadronic tau identifications, where
+they form as a colimated spray of the charged particles. The track reconstruction software
+has been developed to identify such particles in the dense environment of the very narrow
+space using the neural network technique. Meanwhile, the pixel detector has been experienced
+significant radiation damage that degradates the performance. The pixel hits will be lost at
+most 50% of efficiency in b-layer in the end of RUN3, in turn lost the performance for the
+cluster classification to split or merge the associated cluster in the dense track reconstruction.
+The evaluation of the radiation damage of the pixel detector and modeling of the pixel cluster
+classification in the simulation is thus critical to improve the systematic uncertainties through
+RUN3.
+The task devotes to monitor the pixel cluster classification performance using the
+Z->tautau events. The hadronic tau with 3-prong decay mode is a clean source for the dense
+tracking. The task first constructs clean dataset of the Z->tautau with 3-prong final state, then
+the pixel clustering is compared with the simulation in a various view in term of the radiation
+damage. The produced dataset would be useful for many area for the tracking aspect as further
+optimization of the neural network training. The task is thus summarized as internal documents.
 
 %%% Comment out this section when you \bibliography{references} is enabled.
 % \begin{thebibliography}{1}
@@ -786,6 +834,8 @@ black box. Succeeds with probability at least $1-\epsilon$. \newline
   \item $\rightarrow \ket{\tilde{\varphi_u}} \ket{u}$
   \item  $\rightarrow \tilde{\varphi_u}$
 \end{enumerate}
+
+\subsection*{Quantum Fourier Transform Shor's Algorithm}
 
 \textbf{References}
 \begin{enumerate}
