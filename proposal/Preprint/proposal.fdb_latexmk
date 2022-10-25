@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1666583554 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1666583557
-  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1666583553 40614 7087b3dece8b672b50b1b9cf36e608a5 ""
+["pdflatex"] 1666658783 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1666658787
+  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1666658781 43305 25cf2b5c72ab1ba69edc628c2e4f0f43 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1647894602 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1647894602 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/map/fontname/texfonts.map" 1647894602 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -32,6 +32,7 @@
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1647894602 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1647894602 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1647894602 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1647894602 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb" 1647894602 169201 9ebf99020dde51a5086e186761a34e8f ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1647894602 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1647894602 44656 0cbca70e0534538582128f6b54593cca ""
@@ -123,11 +124,12 @@
   "cnot-h.png" 1666447413 19493 aaba8786806cc89aa062ed5aca5458c9 ""
   "cnot-u.png" 1666447403 4932 e610a23ba69dd8d1cb4fb167c5c6fecd ""
   "cnot.png" 1666447393 4172 1d8661a5dac8f09ff52ca53942c4461b ""
+  "kernel.png" 1666586386 25265 a06ee672f58de33c4ce7b9bd7c6659b8 ""
   "kernel1.png" 1665493562 221262 721876cbeb82ec619df2d38af0ed21b5 ""
   "kernel2.png" 1665538478 147864 6f76614aad66dfbbdb24e2e8f023251a ""
-  "proposal.aux" 1666583557 3224 26809eace9efdc35c9fc483342abfcbb "pdflatex"
-  "proposal.out" 1666583557 2470 6a11d14822182873ac33328a254dac27 "pdflatex"
-  "proposal.tex" 1666583553 40614 7087b3dece8b672b50b1b9cf36e608a5 ""
+  "proposal.aux" 1666658786 3383 a99c37ecf7475d040da3f94514d3a019 "pdflatex"
+  "proposal.out" 1666658786 2470 6a11d14822182873ac33328a254dac27 "pdflatex"
+  "proposal.tex" 1666658781 43305 25cf2b5c72ab1ba69edc628c2e4f0f43 ""
   "qft1.png" 1665461717 109305 55927126b5727d3e38bef44fdf7a1937 ""
   "qft2.png" 1665461717 53160 d9e5f0a9454ec4a9352c1f7375cba1cb ""
   "vqc.png" 1666490320 34739 6fb1d1330cda17a45c56fd97e8c981cc ""

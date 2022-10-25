@@ -182,9 +182,10 @@ improving the existing clustering algorithms would be interesting.
 
 
 \textbf{Quantum Signal Processing:} 
-1. \textbf{QFT ready Original Signal State } One important question is: 
+1. \textbf{QFT ready Original Signal State } One important question is:
+\textit{
 Can we use the quantum Fourier transform to speed up the 
-computation of the Fast Fourier Transform or Discrete Fourier Transform? 
+computation of the Fast Fourier Transform or Discrete Fourier Transform?} 
 In Issac Chuang's book, he considered the amplitude in a quantum 
 computer cannot be directly accessed by measurement. Thus there is 
 no way of determining the Fourier transformed amplitudes of the original 
@@ -215,7 +216,7 @@ concerning the ultimate goal(s) of your research in Japan)
 }
 
 Ultimately, I wish to develop the fundamental method or 
-algorithm in exploring today's 
+algorithm useful in exploring today's 
 hard question in natural science. I hope my research mentioned 
 could have similar breakthrough as Machine Learning today and 
 reach "Ubiquitous quantum signal processing or 
@@ -305,12 +306,24 @@ $T = \{ (x_1, y_1), ..., (x_m, y_m)\}$ in $Z_2$, and
 a hyperplane $(w,b)$, a SVM can assign labels through
 signs of the decision function, as:
 \begin{equation}
-  y_{pred} = sign( <w,x> +b)
+  y_{\text{pred}} = \text{sign} ( <w,x> +b)
 \end{equation}
 Also, separation by mapping them into a feature space
 is another solution, where $y_{pred} = sign( <w', \phi(x)> +b')$ and 
-$w' = \sum_i \alpha_i \phi(x_i)$.
-
+$w' = \sum_i \alpha_i \phi(x_i)$. with Lagrangian multipliers 
+$\alpha_i$. Then, under constraints $\alpha_i \leq 0 $ and 
+$\sum_i y_i \alpha_i = 0$, we can compute the optimal 
+$\alpha_i^{*}$, thus the optimal hyperplane by maximizing: 
+\begin{equation}
+  \sum_i \alpha_i - \frac{1}{2} \sum_{i, j} \alpha_i \alpha_j y_i y_j 
+  \phi(x_j)^T \phi(x_i)
+\end{equation}
+From the equation above, we only need the inner product of feature 
+vectors $\phi(x_j)^T \phi(x_i) = K(x_i, x_j)$, which is the above 
+mentioned kernel function. With such idea, $y_{\text{pred}}$ is: 
+\begin{equation}
+  y_{ \text{pred}} = \text{sign} ( \sum_i \alpha_i^* K(x,x') +b')
+\end{equation}
 With the idea of classical methods, the essentials of 
 quantum kernel methods are the same, if we map a 
 classical data vector x into quantum state $\ket{\phi(x)}$
@@ -321,13 +334,17 @@ by encoding circuit $U(x)$ as follows:
 The quantum kernel function is the inner products of 
 two quantum feature vectors in the Hilbert space:
 \begin{equation}
-  K^Q_{ij} = |\bra{\phi(x_j)} \ket{\phi(x_i) }|^2
+  K^Q_{ij} = |\bra{\phi(x_j)} \ket{\phi(x_i) }|^2 = |\bra{0^{\bigotimes N}} U^{\dagger}(x_j) U(x_i) \ket{ 0^{\bigotimes N }} |^2
 \end{equation}
-
 This kind of kernel manipulation could then feed into 
 the common variational quantum circuit learning method 
-and then go through the training. 
-
+and then go through the training as the circuit below. 
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.55\textwidth]{kernel.png}    
+  \end{center}
+  \caption{Simple demo for quantum circuit in kernel method}
+\end{figure}
 One consideration is the number of 
 qubit and the Hilbert space's dimensionality. 
 The Hilbert space's dimensionality grows exponentially 
@@ -454,7 +471,11 @@ probability amplitude encoded in a qubit in FRQI.
 These representations for images provide possible application on 
 quantum Fourier transform. There are already some study using quantum kernel 
 method to work on classification. If properly organized, edge detection, filtering 
-and more could be realized in thoroughly different method from today.
+and more could be realized in thoroughly different method from today. The 
+data for testing the new algorithm could use public dataset like 
+\textbf{MNIST} dataset or \textbf{CIFAR-10} dataset. If the 
+overall new algorithm works with exceptional performance, the 
+dataset with fMRI could be used. 
 
 \subsection{Tentative Plan/Timetable}
 The first two years are filled with more details 
@@ -811,6 +832,10 @@ for degree $\pi$, the corresponding quantum state is then $\ket{x} = Ry(\pi) \ke
   update parameters.}
 \end{figure}
 
+The lost function could be the simplest one: 
+\begin{equation}
+  L (\theta) = \sum^N_{k=1} \frac{1}{N} |\tilde{y}^k - y^k|^2
+\end{equation}
 \subsection*{Quantum Fourier Transform Phase Estimation}
 Suppose a unitary operator U has an eigenvalue $\ket{u}$ with 
 eigenvalue $e^{2 \pi i \varphi}$, where the value of 
@@ -845,3 +870,43 @@ black box. Succeeds with probability at least $1-\epsilon$. \newline
 \end{document}
 
 
+% Overall view of the research proposal 
+% Interviewer 
+% Will your master transfer 
+% How to encode 
+% There are 
+
+% What will be the things other than encoding?
+% How to run the algorithm if Quantum Computer not 
+% New idea on signal processing? Doing the translation is 
+% bring the novelty part to the front. 
+% Avoid doing the implementation 
+% Highlight the major contribution of the proposal
+% 15minutes Slides: present the main idea 
+% giving people some impression. 
+
+% Heat Kernel or Diffusion Kernel. Typical Machine 
+% Learning Stuff. 
+
+% Restructure the research proposal: 
+% Don't have idea of what quantum machanic is. 
+% A single slide for people understand how 
+% quantum state: resembles with machine learning. 
+% Keep the flow 
+% They may have problems with technical issues. 
+% How my project will contribute a lot for the 
+% field. 
+% How we know things? How we know to bring the games 
+% into the
+% We don't have quantum computer here. 
+% How I going to test algorithms: 
+% emulation on super computer. more funding. 
+% some example: Pixel and image. 
+
+% You can image one in the Linear vector space. 
+% explain things in engineering department's view. 
+% Audience are different people. 
+% Why would you like to come to engineering department? 
+% Novel contribution to the signal processing field?
+% What are the novel things in Quantum Machine Learning? 
+% 
