@@ -24,7 +24,7 @@ Institute of Technology}
  Shiwen An \\
  High Energy Accelerator Research Organization, KEK \\
   Tsukuba, Japan \\
-  \texttt{shiwenan@cern.ch} \\
+  \texttt{shiwen.an@cern.ch} \\
   %% examples of more authors
   %  \And
   % Konstantinos Slavakis \\
@@ -52,24 +52,15 @@ Institute of Technology}
 \begin{document}
 \maketitle
 \begin{abstract}
-The research proposal mainly focuses on implementation of 
-state-of-art Quantum Computing Algorithms for Machine Learning 
+The research proposal focuses on development of 
+state-of-art Quantum Computing algorithms for Machine Learning 
 and Signal Processing. The more detailed 
 studies lie in field of quantum machine learning algorithms, with combination 
-of Data Analysis Techniques in Riemannian Manifolds. Meanwhile, it also
-digs into the fundamentals, like the discrete Fourier transform, and expects 
-to expand the Quantum Fourier Transform (QFT) to larger framework. If possible, 
-the encoding in quantum computing will also be included as supplementary 
-study. The first section discusses the motivation and current progress on 
-quantum machine learning, quantum signal processing and data analysis 
-in Riemannian Manifolds. The second section contains 
-the research objective and research method at both Master and PhD level and more. 
-The last section works more 
-on my current research background and on-going projects. This draft
- serves as the backbone for IGP(A) application at Tokyo Institute of 
- Technology. 
+of data analysis techniques in Riemannian Manifolds. Meanwhile, the research 
+expects to expand the application of Quantum Fourier Transform (QFT) in signal 
+processing field. The encoding in quantum computing will also be 
+included as supplementary study. 
 \end{abstract}
-
 
 % keywords can be removed
 \keywords{ 
@@ -85,72 +76,52 @@ Describe articulately the research you wish
 to carry out in Japan.}
 
 \textbf{Research theme:} Quantum Computing Algorithms for 
-Machine Learning and Signal Processing
+Machine Learning and Signal Processing \newline
 
-\subsection{Prior Literature and Current Development}
+Quantum Computing was postulated in the early 1980s as way to 
+perform computations that would not be tractable with a classical 
+computer. Currently, at Noisy Intermediate-Scale Quantum (NISQ)
+era, 50 to hundreds of qubits are available for algorithm designs.
+Many quantum algorithms have already been  
+developed with the aim at exploiting the capacity of the 
+hardware for machine learning and signal processing application. 
+An interesting question is whether there are efficient 
+quantum machine learning algorithms could approach or outperform the 
+existing machine learning algorithms. 
+The Variational Quantum Circuits (VQC) are demonstrated to 
+approximate the Deep Reinforcement Learning for decision-making 
+and policy-selection \cite{ieee_vqc}. 
+Within decades of research, a universal fault-tolerant 
+quantum computer that can solve efficiently problems such 
+as integer factorization and unstructured database search using 
+millions of qubits are expected to be developed. \cite{qml_hep}. 
+
+
+\subsection{Prior Literature and Current Development on Quantum Computing Algorithms}
 
 \textbf{Quantum Machine Learning} Machine learning has been used in various fields for a long time, 
 with algorithms like deep neural network (DNN), binary decision tree (BDT),
 convolutional neural network (CNN), Generative adversarial network (GAN) and 
-etc. Quantum computing was postulated in the early 1980s as way to 
-perform computations that would not be tractable with a classical computer
-With the advent of noisy intermediate-scale quantum computing devices, 
-more quantum algorithms are being developed with the aim at exploiting 
-the capacity of the hardware for machine learning applications. Recent years, 
+etc. Recent years, 
 the robust development of quantum computing has also brought people 
-Variational Quantum Circuit Learning (VQC), Quantum Kernel Methods, 
-Variational Shadow Quantum Learning (VSQL), and Quantum Generative 
+VQC, Quantum Kernel Methods, Variational Shadow Quantum Learning (VSQL), and Quantum Generative 
 Adversarial Network (Quantum-GAN). These new approaches solve 
 the clustering, classification, discrimination problems in 
 Quantum Computing. Most of them take advantages of exponential 
 improvement in computational speed of quantum computer and are expected 
 to have better performance than its classical version of algorithms. 
 
-\textbf{Quantum Kernel Method} Among all the 
-Quantum Machine learning algorithms, Quantum Kernel 
-Method plays an important role for classification problem using 
-large dimension of quantum Hilbert space. Traditionally, 
-kernel methods for machine learning 
-are ubiquitous for pattern recognition, 
-with support vector machines (SVMs) being the most well-known method 
-for classification problems. 
-In kernel methods, the access to the feature space is facilitated 
-through kernels or inner products of feature vectors. 
-In quantum computing, access to the Hilbert space of quantum states
- is given by measurements, which can also be expressed 
- by inner products of quantum states.
-
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.85 \textwidth]{kernel2.png}
+    \includegraphics[width=0.58\textwidth]{vqc.png} 
+    \includegraphics[width=0.38\textwidth]{vqc1.png} 
   \end{center}
-  \caption{Quantum computing and kernel methods are based on a similar principle. }
+  \caption{The generic variational quantum circuit 
+  architecture and procedure for optimization. The 
+  inputs go through encoding, the unitary matrices, 
+  measurement, lost function evalution and then 
+  update parameters.}
 \end{figure}
-
-There are limitations to the successful 
-solution to such problems when the feature space becomes large, 
-and the kernel functions become computationally expensive to estimate. 
-Then, people start to think of computational speed-ups afforded by 
-quantum algorithms. The exploitation of an exponentially 
-large quantum state space through controllable 
-entanglement and interference could resolve current limitations. 
-
-\textbf{Clustering Problems in Riemannian Manifolds}
-Currently in Machine Learning and Signal Processing field, 
-people study the learning from data/features which 
-Numerous well-known features in signal processing 
-and machine learning belong to Riemannian manifolds, like 
-correlation matrices, orthogonal matrices, fixed rank linear 
-subspaces and etc. 
-
-Many learning tasks could be studied with forming feature 
-space and Riemannian Manifold. The state clustering, 
-connectivity among network nodes that stays fixed over a 
-time interval. The community detection, subgroup detection 
-of nodes within a single state/layer. Subnetwork-sequence 
-clustering, sequence of subgroups of nodes with changing state. 
-The algorithms study benefits understanding of the brain networks 
-and its relation with Alzheimer disease, autism, depression and more.
 
 \textbf{Quantum Signal Processing}
 The Fourier transform occurs in many different classical computing 
@@ -162,11 +133,44 @@ transform over the amplitudes of a wavefunction. It is part of
 many quantum algorithms, most notably Shor's factoring algorithm
 and quantum phase estimation. 
 
+Borrowed from Qiskit's notation, the classical discrete Fourier Transforms
+act on vector $x = (x_0, x_1,...,x_n)$ and its mapping to vector $y = (y_0, y_1,...,y_n)$
+according to formula:
+\begin{equation}
+  y_k = \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} x_j \omega_N^{jk}
+\end{equation}
+Where $\omega_N^{jk} = e^{2\pi i \frac{jk}{N}}$. The quantum state
+$ \ket{X} = \sum^{N-1}_{j=0} x_j \ket{j} $ and mapped to $ \ket{Y} = \sum^{N-1}_{k=0} y_k \ket{k} $
+and the map could therefore be expressed as:
+\begin{equation}
+  \ket{j}  = \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \omega_N^{jk} \ket{k}
+\end{equation}
+Or the unitary matrix:
+\begin{equation}
+  U_{QFT}= \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \sum^{N-1}_{k=0}  \omega_N^{jk} \ket{k} \bra{j}
+\end{equation}
+There are already well published paper for quantum Fourier transform.
+
+\begin{figure}[h]
+  \includegraphics[width=0.48\textwidth]{qft2.png}
+  \includegraphics[width=0.48\textwidth]{qft1.png}
+  \caption{The quantum Fourier Transform Circuit for 3 qubits only and 
+  n different qubits}
+\end{figure}
+
  
 \subsection{Motivation}
 
-\textbf{Quantum Machine Learning:}  One interesting question is 
-whether there are methods to 
+\textbf{Quantum Machine Learning:}  Before the robust 
+development of machine learning, people question about 
+what to do with machine learning. Now it turns similar 
+question to quantum machine learning. What is the advantages of 
+quantum version of machine learning over the classical 
+machine learnign? What is the benefit if one just translate
+the classical algorithm? If current quantum algorithms could 
+solve some problems, is there any quantum algorithm that have 
+better performance?
+One interesting question is whether there are methods to 
 combine quantum machine learning algorithms with clustering 
 algorithms using Riemannian Manifold, and benefit from 
 advantages in both algorithms. In Riemannian Manifold, 
@@ -179,9 +183,16 @@ The shared procedure provides idea to improve the existing
 algorithms using Riemannian Manifold and combine it to 
 quantum kernel method, either deriving the completely new algorithm or 
 improving the existing clustering algorithms would be interesting. 
+\cite{qml_kernel} \cite{qml_ibm} \cite{qml_ibm2}
 
 
 \textbf{Quantum Signal Processing:} 
+Moreover, with quantum Fourier transform, could we benefit from 
+formation of Hilbert space in quantum computer and bring it to 
+signal processing field and more? Could we actually prove the 
+universal advantages of quantum computing algorithms over the 
+classical algorithms in machine learning and signal processing? 
+
 1. \textbf{QFT ready Original Signal State } One important question is:
 \textit{
 Can we use the quantum Fourier transform to speed up the 
@@ -215,41 +226,34 @@ this idea would be really interesting.
 concerning the ultimate goal(s) of your research in Japan)
 }
 
-Ultimately, I wish to develop the fundamental method or 
-algorithm useful in exploring today's 
-hard question in natural science. I hope my research mentioned 
-could have similar breakthrough as Machine Learning today and 
-reach "Ubiquitous quantum signal processing or 
-quantum machine learning in natural science and more". 
-Not only in biomedical science, 
-neurological science, fMRI, but also in gravitational 
-wave detection, precise measurement of Higgs particles, general 
-data analysis method for searching new physics phenomena and more. 
-
-Nevertheless, my goals could definitely not be achieved 
-by imagination, logically organized research and efforts are 
-necessary. Therefore, the research objectives, research method and
-originality are demonstrated in this section. Hopefully,
-my research at Tokyo Institute of Technology 
- could possibly \textbf{expand the field of 
-machine learning and signal processing}. 
+\textbf{Notations: } \newline 1. Hilbert space: in quantum mechanics, 
+the state of a physical system is represented by a vector in 
+a \textit{Hilbert space: } a complex vector space with an inner product. \newline
+2. \textit{Dirac notation } is used to represent the vectors in the 
+Hilbert space, denoted by $\ket{v}$, called ket, where $v$ is 
+some symbol which identifies the vector. One could equally well 
+use something like $\overrightarrow{v}$ or $\text{\textbf{v}}$. A 
+multiple of a vector by a complex number $c$ is written as 
+$c\ket{v}$ $\implies$ think of it as analogous to $c \overrightarrow{v}$ 
+or $c \text{\textbf{v}}$. \newline 3. In Dirac notation the inner 
+product of the vectors $\ket{v}$ with $\ket{w}$ is written as $\braket{v}{w}$. 
+This resembles the ordinary dot product $\overrightarrow{v} \cdot \overrightarrow{w}$, 
+thus think of $\overrightarrow{v}^{*} \cdot \overrightarrow{w}$.
 
 \subsection{Research Objectives}
-The ultimate target is to develop research in quantum machine 
-learning and quantum signal processing. The goal set up 
-for quantum machine learning mainly focuses on improvement, 
-with possibility build up new algorithms. The goal 
-for quantum signal processing is more closely related 
-with original work. Moving the 
-classical theory one step forward to quantum realm, two 
-topics have been introduced in previous section, with one 
-topic as supplementary but necessary to these two research:
+The ultimate target is to develop breakthrough algorithms
+ in quantum machine learning and quantum signal processing. 
+ Developing quantum machine learning algorithms, I hope to 
+find the one outperforms current classical machine learning 
+algorithms. Moreover, in quantum signal processing part, I expect to 
+develop algorithms to complete tasks considered not possible in 
+the past. 
 \textbf{
 \renewcommand{\labelenumi}{\Alph{enumi}}
 \begin{enumerate}
-  \item Quantum Machine Learning: Quantum Kernel Method and Clustering in the Riemannian Manifold 
-  \item Quantum Signal Processing: Quantum Fourier Transform and Discrete Fourier Transform
-  \item Quantum Signal Processing: Encoding Theory 
+  \item Quantum Machine Learning: Quantum Machine Learning 
+  \item Quantum Signal Processing: Quantum Fourier Transform
+  % \item Quantum Signal Processing: Encoding Theory 
 \end{enumerate}
 }
 A. The existing Kernel or Reproducing Kernel Hilbert space in 
@@ -273,15 +277,61 @@ Later, several goals for working on Quantum Fourier Transform:
   improvement would also be a nice work to implement and get started. 
 \end{enumerate}
 
-C. Encoding is essential for quantum computing. Before precossing data 
-into the variational quantum circuit, or any type of quantum circuit, 
-encoding of data using angle encoding or amplitude encoding are mandatory. 
-The efficient encoding algorithm is considered as side product of research 
-in quantum machine learning and the quantum signal processing. 
+% C. Encoding is essential for quantum computing. Before precossing data 
+% into the variational quantum circuit, or any type of quantum circuit, 
+% encoding of data using angle encoding or amplitude encoding are mandatory. 
+% The efficient encoding algorithm is considered as side product of research 
+% in quantum machine learning and the quantum signal processing. 
 
-\subsection{Reseaerch Method and Originality}
+\subsection{Reseaerch Method}
 With motivation in last section, the method to achieve 
 research objective A B C will be explained in more details. 
+
+\textbf{Quantum Kernel Method} Among all the 
+Quantum Machine learning algorithms, Quantum Kernel 
+Method plays an important role for classification problem using 
+large dimension of quantum Hilbert space. Traditionally, 
+kernel methods for machine learning 
+are ubiquitous for pattern recognition, 
+with support vector machines (SVMs) being the most well-known method 
+for classification problems. 
+In kernel methods, the access to the feature space is facilitated 
+through kernels or inner products of feature vectors. 
+In quantum computing, access to the Hilbert space of quantum states
+ is given by measurements, which can also be expressed 
+ by inner products of quantum states. \cite{qml_kernel2}
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.85 \textwidth]{kernel2.png}
+  \end{center}
+  \caption{Quantum computing and kernel methods are based on a similar principle. }
+\end{figure}
+
+There are limitations to the successful 
+solution to such problems when the feature space becomes large, 
+and the kernel functions become computationally expensive to estimate. 
+Then, people start to think of computational speed-ups afforded by 
+quantum algorithms. The exploitation of an exponentially 
+large quantum state space through controllable 
+entanglement and interference could resolve current limitations. 
+
+\textbf{Clustering Problems in Riemannian Manifolds}
+Currently in Machine Learning and Signal Processing field, 
+people study the learning from data/features which 
+Numerous well-known features in signal processing 
+and machine learning belong to Riemannian manifolds, like 
+correlation matrices, orthogonal matrices, fixed rank linear 
+subspaces and etc. 
+
+Many learning tasks could be studied with forming feature 
+space and Riemannian Manifold. The state clustering, 
+connectivity among network nodes that stays fixed over a 
+time interval. The community detection, subgroup detection 
+of nodes within a single state/layer. Subnetwork-sequence 
+clustering, sequence of subgroups of nodes with changing state. 
+The algorithms study benefits understanding of the brain networks 
+and its relation with Alzheimer disease, autism, depression and more.
 
 \textbf{Quantum Machine Learning: Quantum Kernel Method and its
 application on Riemannian Manifold}
@@ -412,7 +462,7 @@ on data and features
 and carries through all of the network clustering tasks in 
 Riemannian manifolds. 
 
-\textbf{Quantum Signal Processing: Quantum Fourier Transform Approach}\newline
+\textbf{Quantum Signal Processing: Quantum Fourier Transform and Image Processing}\newline
 The structure for the development of Quantum Signal Processing starts from
 measurement. The wave break down by using Fourier transform's quantum analog
 part, Quantum Fourier Transform (QFT). The Quantum Fourier transform could
@@ -421,30 +471,6 @@ With Simple decomposition, the discrete Fourier transform on $2^n$ amplitudes
 can be implemented as a quantum circuit consisting of $O(n^2)$ Hadamard
 gates and controlled phase shift gates.
 
-Borrowed from Qiskit's notation, the classical discrete Fourier Transforms
-act on vector $x = (x_0, x_1,...,x_n)$ and its mapping to vector $y = (y_0, y_1,...,y_n)$
-according to formula:
-\begin{equation}
-  y_k = \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} x_j \omega_N^{jk}
-\end{equation}
-Where $\omega_N^{jk} = e^{2\pi i \frac{jk}{N}}$. The quantum state
-$ \ket{X} = \sum^{N-1}_{j=0} x_j \ket{j} $ and mapped to $ \ket{Y} = \sum^{N-1}_{k=0} y_k \ket{k} $
-and the map could therefore be expressed as:
-\begin{equation}
-  \ket{j}  = \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \omega_N^{jk} \ket{k}
-\end{equation}
-Or the unitary matrix:
-\begin{equation}
-  U_{QFT}= \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \sum^{N-1}_{k=0}  \omega_N^{jk} \ket{k} \bra{j}
-\end{equation}
-There are already well published paper for quantum Fourier transform.
-
-\begin{figure}[h]
-  \includegraphics[width=0.48\textwidth]{qft2.png}
-  \includegraphics[width=0.48\textwidth]{qft1.png}
-  \caption{The quantum Fourier Transform Circuit for 3 qubits only and 
-  n different qubits}
-\end{figure}
 
 \textbf{Image Processing:} The quantum-analog representation of classical images, the pixel value 
 of $i^{th}$ row and the $j^{th}$ column can be stored as:
@@ -490,11 +516,11 @@ and later three years would be planned at later stage.
                 &  Simple Research on Application Oriented Studies & Local Conference Talks \\ 
     2024 - 2025 &  Algebraic Geometry and Quantum Computing Theory Courses & Learn basics \\
                 &  Seminars on QML and Quantum Signal Processing  & work with Labmates \\
-                &  Summarize First two years of study & Journal Publication \\
+                &  Summarize First two years of study & Journal/Conf Publication \\
                 & & Master Thesis \\
     \hline
-    2025 - 2026 &  Research on Quantum Fourier Transform  & Journal Publication\\
-    2026 - 2027 &  Research on QFT and Encoding Theory  & Journal Publication \\
+    2025 - 2026 &  Research on Quantum Fourier Transform  & Journal/Conf Publication\\
+    2026 - 2027 &  Research on QFT and Related Encoding Theory  & Journal/Conf Publication \\
     & Research on Quantum Image Processing & International Conference Talks \\
     2027 - 2028 &  Summarize Five years of study & PhD Thesis and Graduation 
   \end{tabular}
@@ -503,7 +529,7 @@ and later three years would be planned at later stage.
 
 \textbf{Research Originality:}
 Quantum computing and quantum information science became a hot topics in 
-recent years. 
+recent years. \cite{qml_hep}
 Once there is breakthrough on Noise intermediate Scale quantum era NISQ. All 
 the research could take the data analysis, machine learning, signal processing 
 to next level. As Tokyo Insitute of Technology has quite strong bond with 
@@ -586,7 +612,7 @@ all types of study in natural science and broader human society.
 
 
 \bibliographystyle{unsrt}
-%\bibliography{references}  
+\bibliography{references}  
 
 %%% Remove comment to use the external .bib file (using bibtex).
 %%% and comment out the ``thebibliography'' section.
@@ -659,7 +685,7 @@ the pixel clustering is compared with the simulation in a various view in term o
 damage. The produced dataset would be useful for many area for the tracking aspect as further
 optimization of the neural network training. The task is thus summarized as internal documents.
 
-%%% Comment out this section when you \bibliography{references} is enabled.
+%%% Comment out this section when you  is enabled.
 % \begin{thebibliography}{1}
 
 % \bibitem{qml_vsql}
@@ -881,6 +907,7 @@ black box. Succeeds with probability at least $1-\epsilon$. \newline
 % New idea on signal processing? Doing the translation is 
 % bring the novelty part to the front. 
 % Avoid doing the implementation 
+
 % Highlight the major contribution of the proposal
 % 15minutes Slides: present the main idea 
 % giving people some impression. 
@@ -910,3 +937,6 @@ black box. Succeeds with probability at least $1-\epsilon$. \newline
 % Novel contribution to the signal processing field?
 % What are the novel things in Quantum Machine Learning? 
 % 
+
+\newpage
+\bibliography{references}

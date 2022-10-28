@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{ieee_vqc}
+Samuel Yen-Chi Chen, Chao-Han~Huck Yang, Jun Qi, Pin-Yu Chen, Xiaoli Ma, and
+  Hsi-Sheng Goan.
+\newblock Variational quantum circuits for deep reinforcement learning.
+\newblock {\em IEEE Access}, 8:141007--141024, 2020.
+
+\bibitem{qml_hep}
+Wen Guan, Gabriel Perdue, Arthur Pesah, Maria Schuld, Koji Terashi, Sofia
+  Vallecorsa, and Jean-Roch Vlimant.
+\newblock Quantum machine learning in high energy physics.
+\newblock {\em Machine Learning: Science and Technology}, 2(1):011003, mar
+  2021.
+
+\bibitem{qml_kernel}
+Maria Schuld.
+\newblock Supervised quantum machine learning models are kernel methods, 2021.
+
+\bibitem{qml_ibm}
+Vojt{\v{e}}ch Havl{\'{\i}}{\v{c}}ek, Antonio~D. C{\'{o}}rcoles, Kristan Temme,
+  Aram~W. Harrow, Abhinav Kandala, Jerry~M. Chow, and Jay~M. Gambetta.
+\newblock Supervised learning with quantum-enhanced feature spaces.
+\newblock {\em Nature}, 567(7747):209--212, mar 2019.
+
+\bibitem{qml_ibm2}
+Yunchao Liu, Srinivasan Arunachalam, and Kristan Temme.
+\newblock A rigorous and robust quantum speed-up in supervised machine
+  learning.
+\newblock {\em Nature Physics}, 17(9):1013--1017, jul 2021.
+
+\bibitem{qml_kernel2}
+Maria Schuld and Nathan Killoran.
+\newblock Quantum machine learning in feature hilbert spaces.
+\newblock {\em Physical Review Letters}, 122(4), feb 2019.
+
+\end{thebibliography}
