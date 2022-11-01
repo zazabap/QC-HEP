@@ -55,9 +55,9 @@ Institute of Technology}
 The research proposal focuses on development of 
 state-of-art Quantum Computing algorithms for Machine Learning 
 and Signal Processing. The more detailed 
-studies lie in field of quantum machine learning algorithms, with combination 
+studies lie in field of Quantum Machine Learning algorithms, with combination 
 of data analysis techniques in Riemannian Manifolds. Meanwhile, the research 
-expects to expand the application of Quantum Fourier Transform (QFT) in signal 
+expects to expand the application of Quantum Fourier Transform in signal 
 processing field. The encoding in quantum computing will also be 
 included as supplementary study. 
 \end{abstract}
@@ -74,14 +74,16 @@ included as supplementary study.
 \section{Your research topic in Japan:
 Describe articulately the research you wish
 to carry out in Japan.}
-
 \textbf{Research theme:} Quantum Computing Algorithms for 
-Machine Learning and Signal Processing \newline
-
+Machine Learning and Signal Processing.  \newline 
+\newline
 Quantum Computing was postulated in the early 1980s as way to 
 perform computations that would not be tractable with a classical 
 computer. Currently, at Noisy Intermediate-Scale Quantum (NISQ)
-era, 50 to hundreds of qubits are available for algorithm designs.
+era, 50 to hundreds of qubits are available for algorithm designs \cite{aps_review}.
+So far, companies like D-wave implemented quantum computers specialized 
+quantum annealing and Xanadu implemented Photonic Quantum Computers with 
+216 qubits available. 
 Many quantum algorithms have already been  
 developed with the aim at exploiting the capacity of the 
 hardware for machine learning and signal processing application. 
@@ -94,8 +96,21 @@ and policy-selection \cite{ieee_vqc}.
 Within decades of research, a universal fault-tolerant 
 quantum computer that can solve efficiently problems such 
 as integer factorization and unstructured database search using 
-millions of qubits are expected to be developed. \cite{qml_hep}. 
+millions of qubits are expected to be developed \cite{qml_hep}. 
 
+\textbf{Notations: } \newline 1. Hilbert space: in quantum mechanics, 
+the state of a physical system is represented by a vector in 
+a \textit{Hilbert space}: a complex vector space with an inner product. \newline
+2. \textit{Dirac notation} is used to represent the vectors in the 
+Hilbert space, denoted by $\ket{v}$, called ket, where $v$ is 
+some symbol which identifies the vector. One could equally well 
+use something like $\overrightarrow{v}$ or $\text{\textbf{v}}$. A 
+multiple of a vector by a complex number $c$ is written as 
+$c\ket{v}$ $\implies$ think of it as analogous to $c \overrightarrow{v}$ 
+or $c \text{\textbf{v}}$. \newline 3. In Dirac notation the inner 
+product of the vectors $\ket{v}$ with $\ket{w}$ is written as $\braket{v}{w}$. 
+This resembles the ordinary dot product $\overrightarrow{v} \cdot \overrightarrow{w}$, 
+thus think of $\overrightarrow{v}^{*} \cdot \overrightarrow{w}$.
 
 \subsection{Prior Literature and Current Development on Quantum Computing Algorithms}
 
@@ -149,7 +164,7 @@ Or the unitary matrix:
 \begin{equation}
   U_{QFT}= \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \sum^{N-1}_{k=0}  \omega_N^{jk} \ket{k} \bra{j}
 \end{equation}
-There are already well published paper for quantum Fourier transform.
+There are already well published paper and books for quantum Fourier transform \cite{qc_book}.
 
 \begin{figure}[h]
   \includegraphics[width=0.48\textwidth]{qft2.png}
@@ -159,7 +174,7 @@ There are already well published paper for quantum Fourier transform.
 \end{figure}
 
  
-\subsection{Motivation}
+\subsection{Motivation for working on Quantum Machine Learning and Quantum Signal Processing}
 
 \textbf{Quantum Machine Learning:}  Before the robust 
 development of machine learning, people question about 
@@ -170,7 +185,7 @@ machine learnign? What is the benefit if one just translate
 the classical algorithm? If current quantum algorithms could 
 solve some problems, is there any quantum algorithm that have 
 better performance?
-One interesting question is whether there are methods to 
+One interesting answer is to 
 combine quantum machine learning algorithms with clustering 
 algorithms using Riemannian Manifold, and benefit from 
 advantages in both algorithms. In Riemannian Manifold, 
@@ -185,7 +200,6 @@ quantum kernel method, either deriving the completely new algorithm or
 improving the existing clustering algorithms would be interesting. 
 \cite{qml_kernel} \cite{qml_ibm} \cite{qml_ibm2}
 
-
 \textbf{Quantum Signal Processing:} 
 Moreover, with quantum Fourier transform, could we benefit from 
 formation of Hilbert space in quantum computer and bring it to 
@@ -198,14 +212,14 @@ classical algorithms in machine learning and signal processing?
 Can we use the quantum Fourier transform to speed up the 
 computation of the Fast Fourier Transform or Discrete Fourier Transform?} 
 In Issac Chuang's book, he considered the amplitude in a quantum 
-computer cannot be directly accessed by measurement. Thus there is 
-no way of determining the Fourier transformed amplitudes of the original 
-state. Moreover, Chuang thinks there is no way of determining the Fourier transformed 
+computer cannot be directly accessed by measurement. Moreover, Chuang 
+thinks there is no way of determining the Fourier transformed 
 amplitudes of the original states. However, in image processing field, 
 different Quantum Image Representation were proposed and some quantum analog 
 representation of classical images is demonstrated. Such progress in recent 
 year motivates me to rethink about the possible application of QFT in 
 signal processing.   \newline
+
 2. \textbf{Efficiency Improvement} The Shor's algorithm is a 
 quantum computer algorithm for finding the prime factors of an integer. 
 Shor's algorithm runs polynomial time and allows us to find prime decomposition of very big 
@@ -220,25 +234,10 @@ classical algorithms in signal processing, the exploration of quantum
 Fourier transforms and formation of quantum signal processing framework based on 
 this idea would be really interesting. 
 
-
 \section{Study program in Japan:
 (Describe in detail and with specifics - particularly
 concerning the ultimate goal(s) of your research in Japan)
 }
-
-\textbf{Notations: } \newline 1. Hilbert space: in quantum mechanics, 
-the state of a physical system is represented by a vector in 
-a \textit{Hilbert space: } a complex vector space with an inner product. \newline
-2. \textit{Dirac notation } is used to represent the vectors in the 
-Hilbert space, denoted by $\ket{v}$, called ket, where $v$ is 
-some symbol which identifies the vector. One could equally well 
-use something like $\overrightarrow{v}$ or $\text{\textbf{v}}$. A 
-multiple of a vector by a complex number $c$ is written as 
-$c\ket{v}$ $\implies$ think of it as analogous to $c \overrightarrow{v}$ 
-or $c \text{\textbf{v}}$. \newline 3. In Dirac notation the inner 
-product of the vectors $\ket{v}$ with $\ket{w}$ is written as $\braket{v}{w}$. 
-This resembles the ordinary dot product $\overrightarrow{v} \cdot \overrightarrow{w}$, 
-thus think of $\overrightarrow{v}^{*} \cdot \overrightarrow{w}$.
 
 \subsection{Research Objectives}
 The ultimate target is to develop breakthrough algorithms
@@ -301,13 +300,6 @@ In quantum computing, access to the Hilbert space of quantum states
  is given by measurements, which can also be expressed 
  by inner products of quantum states. \cite{qml_kernel2}
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.85 \textwidth]{kernel2.png}
-  \end{center}
-  \caption{Quantum computing and kernel methods are based on a similar principle. }
-\end{figure}
-
 There are limitations to the successful 
 solution to such problems when the feature space becomes large, 
 and the kernel functions become computationally expensive to estimate. 
@@ -337,7 +329,8 @@ and its relation with Alzheimer disease, autism, depression and more.
 application on Riemannian Manifold}
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.85\textwidth]{kernel1.png}    
+    \includegraphics[width=0.35\textwidth]{kernel1.png}
+    \includegraphics[width=0.63\textwidth]{kernel2.png}    
   \end{center}
   \caption{Overview of the link between quantum models 
   and kernel methods.}
@@ -469,7 +462,7 @@ part, Quantum Fourier Transform (QFT). The Quantum Fourier transform could
 particularlly decompose into a product of simpler unitary matrices.
 With Simple decomposition, the discrete Fourier transform on $2^n$ amplitudes
 can be implemented as a quantum circuit consisting of $O(n^2)$ Hadamard
-gates and controlled phase shift gates.
+gates and controlled phase shift gates. 
 
 
 \textbf{Image Processing:} The quantum-analog representation of classical images, the pixel value 
@@ -502,6 +495,28 @@ data for testing the new algorithm could use public dataset like
 \textbf{MNIST} dataset or \textbf{CIFAR-10} dataset. If the 
 overall new algorithm works with exceptional performance, the 
 dataset with fMRI could be used. 
+
+More importantly, the Quntum Convolutional Neural Network (QCNN) exists for 
+classification and image processing \cite{qml_cnn}. Parameterized 
+QCNN was benchmarked for classical data classification with 
+high accuracy and the best case being about 99\% for MNIST and 
+about 94\% for Fashion MNIST \cite{qml_cnn1} \cite{qml_cnn2}. 
+With combination of QCNN, quantum Fourier Transform, and Quantum 
+Representation of Images. Setup of Quantum Fourier Convolutional Neural Network (Q-FCNN)
+is possible. The big picture for such algorithm is:
+\begin{enumerate}
+  \item Classical Image Data Encoding to Quantum Image Representation
+  \begin{enumerate}
+    \item build up kernels for images then convert each kernel to Quantum Representation
+    \item Directly take input images to Quantum Representation
+  \end{enumerate}
+  \item Using Quantum Fourier Transform take Image Representaions to Fourier Space
+  \item MERA QCNN take QFT transfered data
+  \item Inverse Quantum Fourier Transform
+\end{enumerate}
+
+Here is just one possibility for new quantum algorithm in field of signal processing. Other
+simpler models using previously mentioned VQC is also an option. 
 
 \subsection{Tentative Plan/Timetable}
 The first two years are filled with more details 
@@ -544,6 +559,27 @@ more are all possible. The clustering algorithms anti-kt is already the
 default on clustering analysis for jets in colliders and there are so 
 many possibilities my research could create a new methodology for 
 all types of study in natural science and broader human society. 
+
+
+\section{Present Field of Study}
+
+The pixel hit information plays vital rule for the charge particle track reconstructions,
+especially for flavor tagging such as c-, b-quark jets or hadronic tau identifications, where
+they form as a colimated spray of the charged particles. The track reconstruction software
+has been developed to identify such particles in the dense environment of the very narrow
+space using the neural network technique. Meanwhile, the pixel detector has been experienced
+significant radiation damage that degradates the performance. The pixel hits will be lost at
+most 50\% of efficiency in b-layer in the end of RUN3, in turn lost the performance for the
+cluster classification to split or merge the associated cluster in the dense track reconstruction.
+The evaluation of the radiation damage of the pixel detector and modeling of the pixel cluster
+classification in the simulation is thus critical to improve the systematic uncertainties through
+RUN3.
+The task devotes to monitor the pixel cluster classification performance using the
+$Z \rightarrow \tau \tau$ events. The hadronic tau with 3-prong decay mode is a clean source for the dense
+tracking. The task first constructs clean dataset of the $Z \rightarrow \tau \tau$ with 3-prong final state, then
+the pixel clustering is compared with the simulation in a various view in term of the radiation
+damage. The produced dataset would be useful for many area for the tracking aspect as further
+optimization of the neural network training.
 
 
 % \section{Present Field of Study}
@@ -665,25 +701,6 @@ all types of study in natural science and broader human society.
 \end{enumerate}
 
 
-\section{Present Field of Study}
-
-The pixel hit information plays vital rule for the charge particle track reconstructions,
-especially for flavor tagging such as c-, b-quark jets or hadronic tau identifications, where
-they form as a colimated spray of the charged particles. The track reconstruction software
-has been developed to identify such particles in the dense environment of the very narrow
-space using the neural network technique. Meanwhile, the pixel detector has been experienced
-significant radiation damage that degradates the performance. The pixel hits will be lost at
-most 50% of efficiency in b-layer in the end of RUN3, in turn lost the performance for the
-cluster classification to split or merge the associated cluster in the dense track reconstruction.
-The evaluation of the radiation damage of the pixel detector and modeling of the pixel cluster
-classification in the simulation is thus critical to improve the systematic uncertainties through
-RUN3.
-The task devotes to monitor the pixel cluster classification performance using the
-Z->tautau events. The hadronic tau with 3-prong decay mode is a clean source for the dense
-tracking. The task first constructs clean dataset of the Z->tautau with 3-prong final state, then
-the pixel clustering is compared with the simulation in a various view in term of the radiation
-damage. The produced dataset would be useful for many area for the tracking aspect as further
-optimization of the neural network training. The task is thus summarized as internal documents.
 
 %%% Comment out this section when you  is enabled.
 % \begin{thebibliography}{1}

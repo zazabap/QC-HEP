@@ -1,4 +1,12 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{aps_review}
+Kishor Bharti, Alba Cervera-Lierta, Thi~Ha Kyaw, Tobias Haug, Sumner
+  Alperin-Lea, Abhinav Anand, Matthias Degroote, Hermanni Heimonen, Jakob~S.
+  Kottmann, Tim Menke, Wai-Keong Mok, Sukin Sim, Leong-Chuan Kwek, and Al\'an
+  Aspuru-Guzik.
+\newblock Noisy intermediate-scale quantum algorithms.
+\newblock {\em Rev. Mod. Phys.}, 94:015004, Feb 2022.
 
 \bibitem{ieee_vqc}
 Samuel Yen-Chi Chen, Chao-Han~Huck Yang, Jun Qi, Pin-Yu Chen, Xiaoli Ma, and
@@ -12,6 +20,12 @@ Wen Guan, Gabriel Perdue, Arthur Pesah, Maria Schuld, Koji Terashi, Sofia
 \newblock Quantum machine learning in high energy physics.
 \newblock {\em Machine Learning: Science and Technology}, 2(1):011003, mar
   2021.
+
+\bibitem{qc_book}
+Michael~A. Nielsen and Isaac~L. Chuang.
+\newblock {\em Quantum Computation and Quantum Information: 10th Anniversary
+  Edition}.
+\newblock Cambridge University Press, 2011.
 
 \bibitem{qml_kernel}
 Maria Schuld.
@@ -33,5 +47,22 @@ Yunchao Liu, Srinivasan Arunachalam, and Kristan Temme.
 Maria Schuld and Nathan Killoran.
 \newblock Quantum machine learning in feature hilbert spaces.
 \newblock {\em Physical Review Letters}, 122(4), feb 2019.
+
+\bibitem{qml_cnn}
+Iris Cong, Soonwon Choi, and Mikhail~D. Lukin.
+\newblock Quantum convolutional neural networks.
+\newblock {\em Nature Physics}, 15(12):1273--1278, aug 2019.
+
+\bibitem{qml_cnn1}
+Tak Hur, Leeseok Kim, and Daniel~K. Park.
+\newblock Quantum convolutional neural network for classical data
+  classification.
+\newblock {\em Quantum Machine Intelligence}, 4(1), feb 2022.
+
+\bibitem{qml_cnn2}
+Edward Grant, Marcello Benedetti, Shuxiang Cao, Andrew Hallam, Joshua Lockhart,
+  Vid Stojevic, Andrew~G. Green, and Simone Severini.
+\newblock Hierarchical quantum classifiers.
+\newblock {\em npj Quantum Information}, 4(1), dec 2018.
 
 \end{thebibliography}
