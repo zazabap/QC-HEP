@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proposal"] 1667301447 "proposal.aux" "proposal.bbl" "proposal" 1667303437
+["bibtex proposal"] 1667559842 "proposal.aux" "proposal.bbl" "proposal" 1667559847
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1647894602 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "proposal.aux" 1667303436 4112 e11a4a6fde25c2a68992763c3487c5c1 "pdflatex"
-  "references.bib" 1667298850 6928 e47637fb2294611113a42d5acb58d36e ""
+  "proposal.aux" 1667559846 4600 4f76937e3a70b1b2a18fe9905c7a8e31 "pdflatex"
+  "references.bib" 1667550918 10955 29dbeefc182c571fbf295bfc098956cb ""
   (generated)
   "proposal.bbl"
   "proposal.blg"
-["pdflatex"] 1667303433 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1667303437
-  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1667303432 45709 a2dfa5626a14f68182a3cfa0c2bd4d25 ""
+["pdflatex"] 1667559842 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1667559847
+  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1667559834 46065 63dc4a877dfaef052d5e2ca2be492946 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1647894602 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1647894602 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/map/fontname/texfonts.map" 1647894602 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -132,12 +132,11 @@
   "cnot-u.png" 1666447403 4932 e610a23ba69dd8d1cb4fb167c5c6fecd ""
   "cnot.png" 1666447393 4172 1d8661a5dac8f09ff52ca53942c4461b ""
   "kernel.png" 1666586386 25265 a06ee672f58de33c4ce7b9bd7c6659b8 ""
-  "kernel1.png" 1665493562 221262 721876cbeb82ec619df2d38af0ed21b5 ""
   "kernel2.png" 1665538478 147864 6f76614aad66dfbbdb24e2e8f023251a ""
-  "proposal.aux" 1667303436 4112 e11a4a6fde25c2a68992763c3487c5c1 "pdflatex"
-  "proposal.bbl" 1667301447 2568 1911b2158b83b7732303ff5ee8dfca32 "bibtex proposal"
-  "proposal.out" 1667303436 2936 86e598b774bd9778b6331aad9728ac22 "pdflatex"
-  "proposal.tex" 1667303432 45709 a2dfa5626a14f68182a3cfa0c2bd4d25 ""
+  "proposal.aux" 1667559846 4600 4f76937e3a70b1b2a18fe9905c7a8e31 "pdflatex"
+  "proposal.bbl" 1667559842 4389 f2fa11f07914dc21646f5d2a52c7afaa "bibtex proposal"
+  "proposal.out" 1667559846 2936 86e598b774bd9778b6331aad9728ac22 "pdflatex"
+  "proposal.tex" 1667559834 46065 63dc4a877dfaef052d5e2ca2be492946 ""
   "qft1.png" 1665461717 109305 55927126b5727d3e38bef44fdf7a1937 ""
   "qft2.png" 1665461717 53160 d9e5f0a9454ec4a9352c1f7375cba1cb ""
   "vqc.png" 1666490320 34739 6fb1d1330cda17a45c56fd97e8c981cc ""

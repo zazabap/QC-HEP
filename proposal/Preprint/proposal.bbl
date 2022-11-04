@@ -8,11 +8,10 @@ Kishor Bharti, Alba Cervera-Lierta, Thi~Ha Kyaw, Tobias Haug, Sumner
 \newblock Noisy intermediate-scale quantum algorithms.
 \newblock {\em Rev. Mod. Phys.}, 94:015004, Feb 2022.
 
-\bibitem{ieee_vqc}
-Samuel Yen-Chi Chen, Chao-Han~Huck Yang, Jun Qi, Pin-Yu Chen, Xiaoli Ma, and
-  Hsi-Sheng Goan.
-\newblock Variational quantum circuits for deep reinforcement learning.
-\newblock {\em IEEE Access}, 8:141007--141024, 2020.
+\bibitem{qc_supremacy}
+Frank~Arute et~al.
+\newblock Quantum supremacy using a programmable superconducting processor.
+\newblock {\em Nature}, 574(7779):505--510, oct 2019.
 
 \bibitem{qml_hep}
 Wen Guan, Gabriel Perdue, Arthur Pesah, Maria Schuld, Koji Terashi, Sofia
@@ -21,15 +20,47 @@ Wen Guan, Gabriel Perdue, Arthur Pesah, Maria Schuld, Koji Terashi, Sofia
 \newblock {\em Machine Learning: Science and Technology}, 2(1):011003, mar
   2021.
 
+\bibitem{qml_kernel}
+Maria Schuld.
+\newblock Supervised quantum machine learning models are kernel methods, 2021.
+
+\bibitem{qml_kernel2}
+Maria Schuld and Nathan Killoran.
+\newblock Quantum machine learning in feature hilbert spaces.
+\newblock {\em Physical Review Letters}, 122(4), feb 2019.
+
+\bibitem{qml_vsql}
+Guangxi Li, Zhixin Song, and Xin Wang.
+\newblock Vsql: Variational shadow quantum learning for classification.
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence},
+  35(9):8357--8365, May 2021.
+
+\bibitem{qc_qgan}
+Seth Lloyd and Christian Weedbrook.
+\newblock Quantum generative adversarial learning.
+\newblock {\em Phys. Rev. Lett.}, 121:040502, Jul 2018.
+
+\bibitem{ieee_vqc}
+Samuel Yen-Chi Chen, Chao-Han~Huck Yang, Jun Qi, Pin-Yu Chen, Xiaoli Ma, and
+  Hsi-Sheng Goan.
+\newblock Variational quantum circuits for deep reinforcement learning.
+\newblock {\em IEEE Access}, 8:141007--141024, 2020.
+
+\bibitem{qc_Shor_1997}
+Peter~W. Shor.
+\newblock Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer.
+\newblock {\em {SIAM} Journal on Computing}, 26(5):1484--1509, oct 1997.
+
+\bibitem{qc_phase_estimation}
+A.~Yu. Kitaev.
+\newblock Quantum measurements and the abelian stabilizer problem, 1995.
+
 \bibitem{qc_book}
 Michael~A. Nielsen and Isaac~L. Chuang.
 \newblock {\em Quantum Computation and Quantum Information: 10th Anniversary
   Edition}.
 \newblock Cambridge University Press, 2011.
-
-\bibitem{qml_kernel}
-Maria Schuld.
-\newblock Supervised quantum machine learning models are kernel methods, 2021.
 
 \bibitem{qml_ibm}
 Vojt{\v{e}}ch Havl{\'{\i}}{\v{c}}ek, Antonio~D. C{\'{o}}rcoles, Kristan Temme,
@@ -43,10 +74,29 @@ Yunchao Liu, Srinivasan Arunachalam, and Kristan Temme.
   learning.
 \newblock {\em Nature Physics}, 17(9):1013--1017, jul 2021.
 
-\bibitem{qml_kernel2}
-Maria Schuld and Nathan Killoran.
-\newblock Quantum machine learning in feature hilbert spaces.
-\newblock {\em Physical Review Letters}, 122(4), feb 2019.
+\bibitem{fourier}
+Matthew Tancik, Pratul~P. Srinivasan, Ben Mildenhall, Sara Fridovich-Keil,
+  Nithin Raghavan, Utkarsh Singhal, Ravi Ramamoorthi, Jonathan~T. Barron, and
+  Ren Ng.
+\newblock Fourier features let networks learn high frequency functions in low
+  dimensional domains, 2020.
+
+\bibitem{qml_fcnn}
+Feihong Shen and Jun Liu.
+\newblock Qfcnn: Quantum fourier convolutional neural network, 2021.
+
+\bibitem{svm}
+M.A. Hearst, S.T. Dumais, E.~Osuna, J.~Platt, and B.~Scholkopf.
+\newblock Support vector machines.
+\newblock {\em IEEE Intelligent Systems and their Applications}, 13(4):18--28,
+  1998.
+
+\bibitem{manifold1}
+Cong Ye, Konstantinos Slavakis, Johan Nakuci, Sarah~F. Muldoon, and John
+  Medaglia.
+\newblock Fast sequential clustering in riemannian manifolds for dynamic and
+  time-series-annotated multilayer networks.
+\newblock {\em IEEE Open Journal of Signal Processing}, 2:67--84, 2021.
 
 \bibitem{qml_cnn}
 Iris Cong, Soonwon Choi, and Mikhail~D. Lukin.
