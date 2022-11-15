@@ -3,44 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: proposal.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 23 entries,
+Warning--empty author in pixel
+You've used 26 entries,
             1791 wiz_defined-function locations,
-            577 strings with 7507 characters,
-and the built_in function-call counts, 5025 in all, are:
-= -- 382
-> -- 310
+            593 strings with 8125 characters,
+and the built_in function-call counts, 5574 in all, are:
+= -- 428
+> -- 336
 < -- 0
-+ -- 113
-- -- 90
-* -- 396
-:= -- 839
-add.period$ -- 63
-call.type$ -- 23
-change.case$ -- 22
++ -- 123
+- -- 97
+* -- 434
+:= -- 926
+add.period$ -- 71
+call.type$ -- 26
+change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 177
-empty$ -- 482
-format.name$ -- 90
-if$ -- 1072
+cite$ -- 27
+duplicate$ -- 197
+empty$ -- 539
+format.name$ -- 97
+if$ -- 1193
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 17
-newline$ -- 112
-num.names$ -- 23
-pop$ -- 71
+int.to.str$ -- 26
+missing$ -- 18
+newline$ -- 126
+num.names$ -- 25
+pop$ -- 80
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 80
+skip$ -- 89
 stack$ -- 0
-substring$ -- 293
-swap$ -- 23
+substring$ -- 326
+swap$ -- 25
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 40
-width$ -- 25
-write$ -- 235
+warning$ -- 1
+while$ -- 43
+width$ -- 28
+write$ -- 266
+(There was 1 warning)

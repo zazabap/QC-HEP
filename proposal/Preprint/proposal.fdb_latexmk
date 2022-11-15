@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex proposal"] 1667810327 "proposal.aux" "proposal.bbl" "proposal" 1667810495
+["bibtex proposal"] 1668496804 "proposal.aux" "proposal.bbl" "proposal" 1668496844
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1647894602 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "proposal.aux" 1667810495 5071 79d68d1d263811269d6b805414c677ef "pdflatex"
-  "references.bib" 1667808094 14076 528ea4947d8186392c485eb510d580ed ""
+  "proposal.aux" 1668496843 5572 b36fd3f8c9e8bb5269cd9e9a544ed0d6 "pdflatex"
+  "references.bib" 1668495124 14638 3eb89132e47a9cf72a8e70ca6b7299b5 ""
   (generated)
   "proposal.bbl"
   "proposal.blg"
-["pdflatex"] 1667810492 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1667810495
-  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1667810492 34865 dda377c5099d479498effb040fc0e7e5 ""
+["pdflatex"] 1668496841 "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" "proposal.pdf" "proposal" 1668496844
+  "/Users/shiwenan/Documents/TechOtaku/2_QC/QC-HEP/proposal/Preprint/proposal.tex" 1668496840 37006 4faf6c14f6966ccc6eb099f4e4412d66 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1647894602 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1647894602 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/map/fontname/texfonts.map" 1647894602 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -130,10 +130,10 @@
   "kernel.png" 1666586386 25265 a06ee672f58de33c4ce7b9bd7c6659b8 ""
   "kernel2.png" 1665538478 147864 6f76614aad66dfbbdb24e2e8f023251a ""
   "manifold0.png" 1667807102 51805 526b4e02a5da4f701117b7f35495b742 ""
-  "proposal.aux" 1667810495 5071 79d68d1d263811269d6b805414c677ef "pdflatex"
-  "proposal.bbl" 1667810327 4830 534c81849a07fa77ecfe450ec7fb7330 "bibtex proposal"
-  "proposal.out" 1667810495 2774 6ff1295f2fce426e02c0bd3abf34ef99 "pdflatex"
-  "proposal.tex" 1667810492 34865 dda377c5099d479498effb040fc0e7e5 ""
+  "proposal.aux" 1668496843 5572 b36fd3f8c9e8bb5269cd9e9a544ed0d6 "pdflatex"
+  "proposal.bbl" 1668496804 5583 8f374280972e99010063e25f198cb1a4 "bibtex proposal"
+  "proposal.out" 1668496843 2936 86e598b774bd9778b6331aad9728ac22 "pdflatex"
+  "proposal.tex" 1668496840 37006 4faf6c14f6966ccc6eb099f4e4412d66 ""
   "qcnn.png" 1667809975 593192 4f5f9bf351af571cbe3a970a59e6b58a ""
   "qfcnn.png" 1667809975 80059 e4a498d97047cbf58cacfdc65958014e ""
   "qft1.png" 1665461717 109305 55927126b5727d3e38bef44fdf7a1937 ""

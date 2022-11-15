@@ -51,15 +51,17 @@ Institute of Technology}
 \begin{document}
 \maketitle
 \begin{abstract}
-The research proposal focuses on development of 
-state-of-art Quantum Computing algorithms for Machine Learning 
-and Signal Processing. The more detailed 
-studies lie in field of Quantum Machine Learning algorithms, with combination 
-of data analysis techniques in Riemannian Manifolds. Meanwhile, the research 
-expects to expand the application of Quantum Fourier Transform in signal 
-processing field. The encoding in quantum computing will also be 
-included as supplementary study. 
+This research proposal focuses on the development of 
+state-of-the-art Quantum Computing algorithms for Machine 
+Learning and Signal Processing. More detailed 
+studies lie in the field of quantum machine learning algorithms, 
+with a combination of data analysis techniques in Riemannian Manifolds. 
+Meanwhile, the research expects to expand the application of Quantum
+ Fourier Transform in signal processing field. 
+ The encoding in quantum computing will also be included 
+ as a supplementary study.
 \end{abstract}
+% Spell Check Done
 
 % keywords can be removed
 \keywords{ 
@@ -69,6 +71,8 @@ included as supplementary study.
   Quantum Block Encoding }
 
 *The citation is not precisely managed. 
+
+
 
 \section{Your research topic in Japan:
 Describe articulately the research you wish
@@ -94,13 +98,15 @@ millions of qubits are expected to be developed \cite{qml_hep}.
 Meanwhile, many quantum algorithms have already been  
 developed with the aim at exploiting the capacity of the 
 hardware for machine learning and signal processing application. 
-The research I would like to carry out at Tokyo Instittue of Technology
+The research I would like to carry out at Tokyo institute of Technology
 is the development of the quantum computing algorithms, which could 
 exponentially increase the computational speed compared to classical 
 algorithms. I expect the study of such 
 quantum algorithms in machine learning and signal processing 
 using large Hilbert space may bring various perspective 
-in the field of Information and Communication Engineering. 
+in the field of Information and Communication Engineering. \textbf{Latest Update:}
+The IBM Quantum System Two will have a remarkable 16,632 qubits 
+system in Late 2023 revealed. \href{https://www.youtube.com/watch?v=AQjKUN8PORM}{Youtube Link}!
 
 \textbf{Notations Clarification: }\newline 1. Hilbert space: in quantum mechanics, 
 the state of a physical system is represented by a vector in 
@@ -122,7 +128,7 @@ thus think of $\overrightarrow{v}^{*} \cdot \overrightarrow{w}$.
 with algorithms like BDT, CNN, GAN and etc developed for classification and image recognition task. 
 With advancement in Quantum Computers, an interesting question is whether there are efficient 
 quantum machine learning algorithms could approach or outperform the 
-existing machine learning algorithms on classical computers.
+existing machine learning algorithms on classical computers. 
 Recent years, the robust development of quantum computing has also brought people 
 Variational Quantum Circuits (VQC), Quantum Kernel Methods \cite{qml_kernel} \cite{qml_kernel2}, 
 Variational Shadow Quantum Learning (VSQL)\cite{qml_vsql}, and Quantum Generative 
@@ -269,7 +275,11 @@ The ultimate target is to develop breakthrough algorithms
 Especially in quantum machine learning, 
 finding the one outperforms current classical machine learning 
 algorithms in a specific task would be one of the ultimate goals for 
-researchers in this field. In quantum signal processing part, I wish to 
+researchers in this field. Quite commonly observed, 
+the quantum algorithms have better performance than the classical algorithms when 
+data sample is low \cite{qml_hep} \cite{qml_vsql}. When the dataset is large, classical 
+algorithm has better performance in accuracy than the current quantum algorithms. 
+In quantum signal processing part, I wish to 
 develop algorithms using quantum Fourier transform to 
 complete tasks considered not possible in the past. Therefore, the 
 objectives below come to the table:
@@ -454,7 +464,7 @@ low-dimensional manifold embedded in a higher-dimensional space \cite{manifold2}
 We could possible define the new algorithm based on this feature: 
 \begin{enumerate}
   \item Define the manifold, submanifold and their dimensions
-  \item Construct Graphs based on the manifold. 
+  \item Construct Graphs based on the manifold \cite{manifold3}. 
   \item Calculate the Laplacian of the data graph and form 
         appropriate Kernel function in VQC. 
   \item Optimized the regularized objective function (Loss function)
@@ -503,11 +513,13 @@ Learning here is suppose to work in field of semi-supervised learning.
   %   The Laplacian of A few classic graph and how 
   % a torus may be created from a squre in the plane with 
   % periodic boundary condition. 
-  Simple Flow diagram for demonstrating the algorithm I am 
+  Simple flow diagram for demonstrating the algorithm I am 
   trying to form. The kernel formed in the circuit could 
   be heat kernel, Gaussian Kernel, SVM based on needs 
-  and experiment effect. 
-  \cite{manifold2}}
+  and experiment effect
+  \cite{manifold2}. The 
+  graph converted from the Manifold could 
+  be converted to the quantum state \cite{encoding1}. }
   \label{ppp}
 \end{figure}
 
@@ -600,12 +612,12 @@ and later three years would be planned at later stage.
                 &  Seminars on Quantum Machine Learning &  work with Labmates \\
                 &  Simple Research on Application Oriented Studies & Local Conference Talks \\ 
     2024 - 2025 &  Algebraic Geometry and Quantum Computing Theory Courses & Learn basics \\
-                &  Seminars on QML and Quantum Signal Processing  & work with Labmates \\
+                &  Seminars on Quantum Manifold Learning  & work with Labmates \\
                 &  Summarize First two years of study & Journal/Conf Publication \\
                 & & Master Thesis \\
     \hline
-    2025 - 2026 &  Research on Quantum Fourier Transform  & Journal/Conf Publication\\
-    2026 - 2027 &  Research on QFT and Related Encoding Theory  & Journal/Conf Publication \\
+    2025 - 2026 &  Research on Quantum Signal Processing  & Journal/Conf Publication\\
+    2026 - 2027 &  Research on QSP and Related Encoding Theory  & Journal/Conf Publication \\
     & Research on Quantum Image Processing & International Conference Talks \\
     2027 - 2028 &  Summarize Five years of study & PhD Thesis and Graduation 
   \end{tabular}
@@ -632,6 +644,26 @@ default on clustering analysis for jets in colliders and there are so
 many possibilities my research could create a new methodology for 
 all types of study in natural science and broader human society. 
 
+
+\section{Present Field of Study}
+
+The pixel hit information plays vital rule for the charge particle track reconstructions,
+especially for flavor tagging such as c-, b-quark jets or hadronic tau identifications, where
+they form as a colimated spray of the charged particles. The track reconstruction software
+has been developed to identify such particles in the dense environment of the very narrow
+space using the neural network technique. Meanwhile, the pixel detector has been experienced
+significant radiation damage that degradates the performance. The pixel hits will be lost at
+most 50\% of efficiency in b-layer in the end of RUN3, in turn lost the performance for the
+cluster classification to split or merge the associated cluster in the dense track reconstruction.
+The evaluation of the radiation damage of the pixel detector and modeling of the pixel cluster
+classification in the simulation is thus critical to improve the systematic uncertainties through
+RUN3.
+The task devotes to monitor the pixel cluster classification performance using the
+$Z \rightarrow \tau \tau$ events. The hadronic tau with 3-prong decay mode is a clean source for the dense
+tracking. The task first constructs clean dataset of the $Z \rightarrow \tau \tau$ with 3-prong final state, then
+the pixel clustering is compared with the simulation in a various view in term of the radiation
+damage. The produced dataset would be useful for many area for the tracking aspect as further
+optimization of the neural network training \cite{pixel}.
 
 % \section{Present Field of Study}
 

@@ -102,6 +102,17 @@ Cong Ye, Konstantinos Slavakis, Johan Nakuci, Sarah~F. Muldoon, and John
 Luke Melas-Kyriazi.
 \newblock The mathematical foundations of manifold learning, 2020.
 
+\bibitem{manifold3}
+Mikhail Belkin, Partha Niyogi, and Vikas Sindhwani.
+\newblock Manifold regularization: A geometric framework for learning from
+  labeled and unlabeled examples.
+\newblock {\em J. Mach. Learn. Res.}, 7:2399–2434, dec 2006.
+
+\bibitem{encoding1}
+Daan Camps, Lin Lin, Roel Van~Beeumen, and Chao Yang.
+\newblock Explicit quantum circuits for block encodings of certain sparse
+  matrices, 2022.
+
 \bibitem{qml_cnn}
 Iris Cong, Soonwon Choi, and Mikhail~D. Lukin.
 \newblock Quantum convolutional neural networks.
@@ -128,5 +139,12 @@ Mart\'{i}n~Abadi et~al.
 \newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
   2015.
 \newblock Software available from tensorflow.org.
+
+\bibitem{pixel}
+{Measurement of performance of the pixel neural network clustering algorithm of
+  the ATLAS experiment at $\sqrt{s}$ = 13 TeV}.
+\newblock Technical report, CERN, Geneva, 2015.
+\newblock All figures including auxiliary figures are available at
+  https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2015-044.
 
 \end{thebibliography}

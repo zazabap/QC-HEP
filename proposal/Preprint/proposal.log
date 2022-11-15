@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2022.5.27)  7 NOV 2022 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2022.5.27)  15 NOV 2022 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--104
+Underfull \hbox (badness 10000) in paragraph at lines 80--110
 
  []
 
@@ -485,81 +485,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--104
 
 
 {/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-<vqc.png, id=55, 629.35126pt x 265.99374pt>
+<vqc.png, id=60, 629.35126pt x 265.99374pt>
 File: vqc.png Graphic file (type png)
 <use vqc.png>
-Package pdftex.def Info: vqc.png  used on input line 133.
+Package pdftex.def Info: vqc.png  used on input line 139.
 (pdftex.def)             Requested size: 272.45874pt x 115.15434pt.
-<vqc1.png, id=57, 1000.73875pt x 630.355pt>
+<vqc1.png, id=62, 1000.73875pt x 630.355pt>
 File: vqc1.png Graphic file (type png)
 <use vqc1.png>
-Package pdftex.def Info: vqc1.png  used on input line 134.
+Package pdftex.def Info: vqc1.png  used on input line 140.
 (pdftex.def)             Requested size: 178.50919pt x 112.43944pt.
  [2 <./vqc.png> <./vqc1.png>]
-<qft2.png, id=88, 825.0825pt x 272.01625pt>
+<qft2.png, id=93, 825.0825pt x 272.01625pt>
 File: qft2.png Graphic file (type png)
 <use qft2.png>
-Package pdftex.def Info: qft2.png  used on input line 237.
+Package pdftex.def Info: qft2.png  used on input line 243.
 (pdftex.def)             Requested size: 225.48038pt x 74.3336pt.
-<qft1.png, id=89, 1084.05pt x 369.38pt>
+<qft1.png, id=94, 1084.05pt x 369.38pt>
 File: qft1.png Graphic file (type png)
 <use qft1.png>
-Package pdftex.def Info: qft1.png  used on input line 238.
+Package pdftex.def Info: qft1.png  used on input line 244.
 (pdftex.def)             Requested size: 225.48038pt x 76.8281pt.
  [3 <./qft2.png> <./qft1.png>]
-<kernel2.png, id=103, 988.69376pt x 231.86626pt>
+<kernel2.png, id=110, 988.69376pt x 231.86626pt>
 File: kernel2.png Graphic file (type png)
 <use kernel2.png>
-Package pdftex.def Info: kernel2.png  used on input line 334.
+Package pdftex.def Info: kernel2.png  used on input line 344.
 (pdftex.def)             Requested size: 399.2946pt x 93.63995pt.
  [4 <./kernel2.png>]
-<kernel.png, id=119, 712.6625pt x 263.98625pt>
+<kernel.png, id=126, 712.6625pt x 263.98625pt>
 File: kernel.png Graphic file (type png)
 <use kernel.png>
-Package pdftex.def Info: kernel.png  used on input line 407.
+Package pdftex.def Info: kernel.png  used on input line 417.
 (pdftex.def)             Requested size: 117.43874pt x 43.49945pt.
  [5 <./kernel.png>]
-<manifold0.png, id=141, 739.76375pt x 343.2825pt>
+<manifold0.png, id=149, 739.76375pt x 343.2825pt>
 File: manifold0.png Graphic file (type png)
 <use manifold0.png>
-Package pdftex.def Info: manifold0.png  used on input line 499.
+Package pdftex.def Info: manifold0.png  used on input line 509.
 (pdftex.def)             Requested size: 211.3883pt x 98.09319pt.
-<qkernel.png, id=142, 845.1575pt x 379.4175pt>
+<qkernel.png, id=150, 845.1575pt x 379.4175pt>
 File: qkernel.png Graphic file (type png)
 <use qkernel.png>
-Package pdftex.def Info: qkernel.png  used on input line 500.
+Package pdftex.def Info: qkernel.png  used on input line 510.
 (pdftex.def)             Requested size: 211.3883pt x 94.89465pt.
  [6 <./manifold0.png> <./qkernel.png>]
-<qcnn.png, id=166, 755.82375pt x 596.2275pt>
+<qcnn.png, id=176, 755.82375pt x 596.2275pt>
 File: qcnn.png Graphic file (type png)
 <use qcnn.png>
-Package pdftex.def Info: qcnn.png  used on input line 579.
+Package pdftex.def Info: qcnn.png  used on input line 591.
 (pdftex.def)             Requested size: 211.3883pt x 166.75151pt.
-<qfcnn.png, id=167, 818.05624pt x 512.91624pt>
+<qfcnn.png, id=177, 818.05624pt x 512.91624pt>
 File: qfcnn.png Graphic file (type png)
 <use qfcnn.png>
-Package pdftex.def Info: qfcnn.png  used on input line 580.
+Package pdftex.def Info: qfcnn.png  used on input line 592.
 (pdftex.def)             Requested size: 248.96956pt x 156.09877pt.
- (./proposal.bbl
-Underfull \vbox (badness 1122) has occurred while \output is active []
-
- [7 <./qcnn.png> <./qfcnn.png>]) [8] (./proposal.aux)
+ [7 <./qcnn.png> <./qfcnn.png>] (./proposal.bbl [8]) [9] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 6FF1295F2FCE426E02C0BD3ABF34EF99;2774.
+(rerunfilecheck)             Checksum: 86E598B774BD9778B6331AAD9728AC22;2936.
  ) 
 Here is how much of TeX's memory you used:
- 13605 strings out of 478268
- 219496 string characters out of 5837861
- 641707 words of memory out of 5000000
- 31283 multiletter control sequences out of 15000+600000
+ 13614 strings out of 478268
+ 219592 string characters out of 5837861
+ 643347 words of memory out of 5000000
+ 31287 multiletter control sequences out of 15000+600000
  524315 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,14n,77p,1071b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,14n,77p,1071b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/Cellar/texlive/20220321/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (8 pages, 1163885 bytes).
+Output written on proposal.pdf (9 pages, 1167764 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 51307 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 51315 words of extra memory for PDF output out of 51595 (max. 10000000)
 
