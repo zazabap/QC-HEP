@@ -13,6 +13,7 @@
 \usepackage{microtype}      % microtypography
 \usepackage{lipsum}
 \usepackage{graphicx}
+\usepackage{physics}
 \graphicspath{ {./images/} }
 
 
@@ -162,6 +163,162 @@ See awesome Table~\ref{tab:table}.
 \item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
 \end{itemize}
 
+\section{Application for Tokyo Institute of Technology}
+In the format easier to read before formal submission.
+\subsection{Your research topic in Japan: 
+Describe articulately the research you wish 
+to carry out in Japan.}
+
+Therefore, firstly based on the 
+existing “Kernel Regression Imputation in 
+Manifolds Via Bi-Linear Modeling: The Dynamic-MRI Case”, 
+I do find the proposed problem in the imputation-by-regression 
+Specifically, “KRIM makes explicit use of 
+(non-linear) manifold assumptions and geometry”. 
+There is an interesting point mentioned in this paper, 
+where Manifolds learning build on the hypothesis 
+that measured data lie close to a low-dimensional 
+manifold embedded in a high dimensional space.  
+Since I have some familiarity with implementation 
+of geometric approaches. I do believe the enhanced data needs 
+to be implemented. 
+
+The length of the program is 5 years in total, therefore,
+ I would like to explore the quantum computing algorithms 
+ with the Riemann Manifold in the first two years. 
+ I would like to improve the data analysis method in 
+ Variational Quantum Circuit Learning, Quantum Kernel Method 
+ and Variational Quantum Shadow Learning with the advantages 
+ in Professor Slavakis' lab on Riemannian manifold. 
+
+To understand the research topic, it is necessary to understand what 
+currently professor Slavakis is working on. The model heavily involves 
+the Manifolds. The kernel regression imputation in manifolds (KRIM).
+
+One question provided to solve: In collected data, "Holes/gaps" or 
+"missing entries" give rise in turn to aliasing and motion blurring 
+in the observed images series. -> Non-parametric approaches. 
+
+The other question provided is: "Fast Sequential Clustering in Riemannian 
+manifolds for Dynamic and Time-series-Annotated Multilayer Networks". This 
+work focus on building a sequential-clustering framework able to address 
+a wide variety of clustering tasks in dynamic multilayer (brain) networks 
+via the information extracted from their nodal time-series. 
+There are procedures working step by step: 
+\begin{enumerate}
+  \item feature extraction from time-series 
+  \item Riemannian Manifolds 
+  \item Problem: state clustering, community detection, 
+  subnetwork sequence tracking.  
+\end{enumerate}
+
+First is the Quantum Kernel Method. 
+The Quantum Kernel Method formation of 
+Reproducing Kernel Hilbert Space (RKHS) with the 
+Fast Sequential Clustering in Riemannian Manifolds. 
+Quantum Kernel Method was proposed as Quantum Machine Learning.
+
+I will do the emulation first on the normal computer, after verification.
+I hope I could access to D-wave to perform the algorithms on the real quantum
+computer.  If everything works perfectly, I consider my idea could be 
+realized with improvement. 
+
+\textbf{The Top Down Approach:}
+One takes the data and analyze with 
+different method. First I would like to work on the normal signal processing field 
+to study a bit more on classical theory. It is necessary to have 
+a deep understanding of the fundamentals before making great 
+progress in any field. 
+
+\subsection{Study program in Japan: 
+(Describe in detail and with specifics - particularly 
+concerning the ultimate goal(s) of your research in Japan)
+}
+
+\textbf{The Bottom Up Approach:}
+The goals of my research in Japan are composed step by step. 
+I would like to enhance the existing algorithms or 
+models for data analysis using Quantum Computing Algorithms 
+as described in last question. I hope to follow up and expand the 
+research shown in previous section and add two or more approaches to build
+up a relatively complete "Framework" for quantum signal processing.
+
+\begin{itemize}
+  \item Quantum Machine Learning: The Riemannian Manifold Approach
+  \item Quantum Signal Processing: Quantum Computing Encoding Theory Approach
+  \item Quantum Signal Processing: Quantum Fourier Transform Approach 
+\end{itemize}
+
+The combination of the work could build up solid foundations of 
+classical signal processing and quantum computing. 
+
+\textbf{Quantum Signal Processing: Quantum Computing Encoding Theory Approach}\newline
+Specifically, based on Daan Camps' Paper on "Explicit Quantum Circuits 
+for block encodings of certain sparse matrices" and Issac Chuang's paper
+on "Optimal Hamiltonian Simulation by Quantum Signal Processing". I could 
+see some revolution or breakthrough gradually happen in the field of Signal
+Processing. The later one shows the way to simulate the physical systems with 
+the quantum signal processing. 
+
+\textbf{Quantum Signal Processing: Quantum Fourier Transform Approach}\newline
+The structure for the development of Quantum Signal Processing starts from 
+measurement. The wave break down by using Fourier transform's quantum analog
+part, Quantum Fourier Transform (QFT). The Quantum Fourier transform could 
+particularlly decompose into a product of simpler unitary matrices. 
+With Simple decomposition, the discrete Fourier transform on $2^n$ amplitudes 
+can be implemented as a quantum circuit consisting of $O(n^2)$ Hadamard 
+gates and controlled phase shift gates. 
+
+Borrowed from Qiskit's notation, the classical discrete Fourier Transforms 
+act on vector $x = (x_0, x_1,...,x_n)$ and its mapping to vector $y = (y_0, y_1,...,y_n)$
+according to formula:
+\begin{equation}
+  y_k = \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} x_j \omega_N^{jk}
+\end{equation}
+Where $\omega_N^{jk} = e^{2\pi i \frac{jk}{N}}$. The quantum state 
+$ \ket{X} = \sum^{N-1}_{j=0} x_j \ket{j} $ and mapped to $ \ket{Y} = \sum^{N-1}_{k=0} y_k \ket{k} $ 
+and the map could therefore be expressed as:
+\begin{equation}
+  \ket{j}  = \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \omega_N^{jk} \ket{k}
+\end{equation}
+Or the unitary matrix: 
+\begin{equation}
+  U_{QFT}= \frac{1}{\sqrt{N}} \sum^{N-1}_{j=0} \sum^{N-1}_{k=0}  \omega_N^{jk} \ket{k} \bra{j}
+\end{equation}
+There are already well published paper for quantum Fourier transform. In imaging analysis, 
+Fourier transform is definitely an unavoidable technique. Starting from here, 
+in analog signal processing, I would like to apply quantum Fourier transform, 
+the classical discrete Fourier transform and compare their differences and how 
+quantum Fourier transform could possibly enhance the classical result. 
+Several Goals for working on Quantum Fourier Transform:
+\begin{enumerate}
+  \item Forming algorithms could possibly enhance or replace the classical 
+  discrete Fourier transform. Such replacement may improve classical 
+  algorithms to achieve better performance, like noise filtering and etc. 
+  \item By the theory of Big-O, the quantum Fourier transform is exponentially 
+  faster than classical discrete Fourier transform. 
+\end{enumerate}
+
+
+The first paper is the more recent one, which introduced the 
+more efficient way to encode the data. 
+
+A fundamental method or algorithm in exploring today's 
+hard question in natural science. Not only in biomedical science, 
+neurological science, fMRI, but also in gravitational 
+wave detection, detection of Higgs particles and more. 
+Of course, this could not be simply developed with purely 
+algorithm solutions, collaboration with other teams and
+ more will be necessary. 
+
+The Ultimate goal is to explore the 
+ Ubiquitous quantum signal processing or 
+ quantum machine learning in natural science and more. 
+This is a type of engineering goal which could possibly expand the 
+ field of signal processing. 
+
+The PhD
+Thesis by Doctor Yonina Eldar and A.V. Oppenheim.
 
 \bibliographystyle{unsrt}  
 %\bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
