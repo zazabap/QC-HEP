@@ -13,6 +13,7 @@
 \usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage{physics}
+\usepackage[labelformat=empty]{caption}
 \graphicspath{ {./images/} }
 
 
@@ -665,6 +666,8 @@ the pixel clustering is compared with the simulation in a various view in term o
 damage. The produced dataset would be useful for many area for the tracking aspect as further
 optimization of the neural network training \cite{pixel}.
 
+
+
 % \section{Present Field of Study}
 
 % During my undergraduate period, my field of study was Atomic, 
@@ -733,6 +736,131 @@ optimization of the neural network training \cite{pixel}.
 \bibliographystyle{unsrt}
 \bibliography{references}  
 
+\newpage
+% \section*{Summary of the Thesis}
+\begin{center}
+  { \Large
+  \textbf{Summary of the Thesis}
+  }
+\end{center}
+\thispagestyle{empty}
+% Large Hadron Collider (LHC) and A Toroidal LHC Apparatus (ATLAS) experiment are built to understand 
+% Standard Model and explore the new phenomena in field of High Energy Physics. 
+% Currently, a major upgrade of the Large Hadron Collider at CERN to High Luminosity Large 
+% Hadron Collider (HL-LHC) is planned to be taken place before 2030. 
+% One of the upgrade occurs in the pixel detector region of ATLAS experiment. The current 
+% inner detector will be replaced completely by the newer Inner Tracking Detector, with 
+% advanced Complementary Metal-oxide Semiconductor (CMOS) 65 nm technology 
+% and state-of-art Application Specific Integrated Circuits (ASIC).  
+
+Large Hadron Collider (LHC) and A Toroidal LHC Apparatus (ATLAS) experiment are built on
+ understanding Standard Model and exploring the new phenomena in the field of High Energy Physics. 
+ A significant upgrade of the Large Hadron Collider at CERN to High Luminosity Large Hadron Collider (HL-LHC) 
+ is planned to occur before 2030. One upgrade occurs in the ATLAS experiment's pixel detector region. 
+ The current inner detector will be entirely replaced by the newer Inner Tracking Detector, 
+ with advanced Complementary Metal-oxide Semiconductor (CMOS) 65 nm technology and state-of-art 
+ Application Specific Integrated Circuits (ASIC). 
+
+\begin{figure*}[h]
+  \begin{center}
+    \includegraphics[width=0.49\textwidth]{thesispic/ch2_ATLAS.jpeg}
+    \includegraphics[width=0.49\textwidth]{thesispic/ch2_Pixel_Layout.png}
+    \caption*{\textbf{Figure a.} Left: overview of the ATLAS detector; Right: Schematic of the 
+    inner tracking detector and each red dot represent a small detector 
+    module piece, which also shown in later figure. }
+  \end{center}
+\end{figure*}
+
+% In the upgrade, the size of each pixel inside is 5 times smaller. With smaller 
+% pixel size, the readout speed needed to be 10 times faster. 
+% Also, the radiation damage per year increases, which
+% requires better radiation resistance compared to old detector. 
+% In order to achieve the above goals, quality control of each module during production 
+% is necessary. \textbf{My thesis focuses on establishing and evaluating 
+% the Quality control sequence of single piece of silicon detector.}
+% The research could help faciliate the production 
+% process, especially the electrical test, in both accuracy and rapidity aspects.
+% The time is also estimated for 
+% the 2200 modules production requirement in Japan. By the end of 2025, the 2200 module 
+% production is expected to be finished within 220 days or less. 
+
+In the upgrade, the size of each pixel inside is five times smaller.
+ With a smaller pixel size, the readout speed needed to be ten times faster. 
+ Also, the radiation damage per year increases, which requires better radiation 
+ resistance compared to the old detector. To achieve the above goals, 
+ quality control of each module during production is necessary. \textbf{
+ My thesis focuses on establishing and evaluating the Quality control
+  sequence of a single piece of silicon detector. }
+  The research could facilitate the production process, especially the electrical test, 
+  in accuracy and rapidity aspects. The time is also estimated 
+  for the 2200 modules production requirement in Japan. By the end of 2025, the 2200 module 
+production is expected to be finished within 220 days or less. 
+
+\begin{figure*}[h]
+  \begin{center}
+    \includegraphics[width=0.38\textwidth]{thesispic/ch3_DAQ.png}
+    \includegraphics[width=0.22\textwidth]{thesispic/ch2_installed_module.png}
+    \includegraphics[width=0.38\textwidth]{thesispic/ch2_xray_dimension.png}
+    \caption*{\textbf{Figure b.} From left to right: Overview of the DAQ system, which composed of 
+    the power supply, data readout adaptor; $4\times4$ cm$^2$ module installed
+    inside the cooling system; display of Xray under working condition; dimension 
+    of the Xray in milimeters}
+  \end{center}
+\end{figure*}
+
+% Specifically, the research work setup the test environment for testing.
+% First, with existing hardware like Ohio board, Osaka board, and FPGA, the 
+% output analog signal is converted to digital signal. Such signal is processed 
+% with supplementary on digital signal loss. After processing digital signal 
+% from each pixel on the detector, the whole map will be generated for 
+% analysis. 
+% Based on the readout system, digital map and analog map are created to 
+% guarantee the function of each chip in the semiconductor detector module. 
+% Moreover, radiation and bump disconnection inside 
+% semiconductor device were analyzed with generated map. With external 
+% Xray setup outside cooling and readout system, radiation region is
+% calculated excluding the resistor component on the board. Then for comparison 
+% and verification, the amount of radiation is calculated  
+% through emulation of the readout system using GEANT4 software. 
+
+Specifically, the research work set up the test environment for testing 
+the functionality of the semiconductor detector module.
+First, with existing hardware like Ohio board, Osaka board, and FPGA, the 
+output analog signal is converted to a digital signal. 
+Such signal is processed with supplementary digital signal loss. 
+After processing the digital signal from each pixel on the detector, 
+the whole map will be generated for analysis. Based on the readout system,
+ a digital map and an analog map are created to guarantee the function of 
+ each chip in the semiconductor detector module. Moreover, 
+ radiation and bump disconnection inside the semiconductor device 
+ were analyzed with generated map. The radiation region is calculated 
+ with an external X-ray setup outside the cooling and readout system, 
+ excluding the board's resistor component. Then for comparison and verification, 
+ the amount of radiation is calculated through emulation of the readout system using GEANT4 software. 
+\begin{figure*}[h]
+  \begin{center}
+    \includegraphics[width=0.29\textwidth]{thesispic/ch3_normal_scurve.png}
+    \includegraphics[width=0.35\textwidth]{thesispic/ch3_xray_cover_cp.jpeg}
+    \includegraphics[width=0.35\textwidth]{thesispic/ch3_bump09base_xray.jpg}
+    \caption*{ \textbf{Figure c.} Analysis of data from the semiconductor detector. From left to right: 
+    the threshold and signal analysis on each pixel on semiconductor detector; The result X-ray 
+    scan detecting photons hitting the detector; the bump disconnection scan 
+    for detecting the failed pixel regions. }
+  \end{center}
+\end{figure*}
+
+\thispagestyle{empty}
+% In the complete thesis, the working principle of
+% semiconductor is described and the Data Acquisition
+% System is explained in details. The testing procedure for each module
+% is also illustrated in details with focus on electrical test. 
+% With enhancement of the system and testing procedure, we expect better 
+% improvement in the future quality control sequence for the entire ATLAS Japan community.  
+In the complete thesis, the working principle of
+semiconductors is described, and the Data Acquisition System is explained in detail. The testing procedure for each module
+is also illustrated in detail, focusing on the electrical test. 
+With the enhancement of the system and testing procedure, we expect better 
+improvement in the future quality control sequence for the entire ATLAS Japan community. 
 
 \end{document}
 \bibliography{references}
